@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Color and Hyperlinks
+        </title>
+         <style>
+            .card{
+                background:#01391A;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #01391A;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #01391A;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+            <h1>Introduction to jQuery</h1>
+            <hr>
+            <div class="cards">
+                <div class="card">
+                    <p>jQuery is a JavaScript library that offers concise APIs for selecting elements,
+                        handling events, updating the DOM, effects, and AJAX. It was especially valuable
+                        when browser differences required extra compatibility work. Modern browsers
+                        provide many equivalent capabilities directly, but jQuery remains in existing
+                        projects and is useful to recognize because many older codebases still use it and
+                        many students need to read it when maintaining legacy websites.</p>
+                </div>
+                <div class="card">
+                    <p>The main advantage of jQuery is readability and shorter code. Instead of writing
+                        several DOM API calls, a developer can select an element with a CSS-style
+                        expression and change its content or classes in a single chained statement. It also
+                        simplified event-driven programming and AJAX by providing consistent behavior
+                        across browsers at a time when JavaScript support varied significantly.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Select elements</h3>
+                    <p>$(".notice") selects elements
+                        using familiar CSS selector syntax.</p>
+                </div>
+                <div class="card">
+                    <h3>Wait for the DOM</h3>
+                    <p>$(function () { ... }) runs
+                        after the document is ready to be
+                        manipulated.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Handle events</h3>
+                    <p>.on("click", handler)
+                        attaches an event listener.</p>
+                </div>
+                <div class="card">
+                    <h3>Update content</h3>
+                    <p>Methods such as .text() ,
+                        .addClass() , and
+                        .toggleClass() manipulate
+                        selected elements.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 122016.png" height="300" width="500">
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 122108.png" height="300" width="500">
+                </div>
+            </div>
+        <hr>
+<div class="card"><a href="Unit 2.html">Back</a></div>
+    </body>
+</html>
+</>

@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Formatting and Fonts
+             </title>
+             <style>
+            .card{
+                background:#352018;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #FFC7C7;
+                 box-shadow: 0 0 25px rgb(34, 10, 10);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(34, 10, 10);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+       
+    </head>
+    <body bgcolor="#FFC7C7">
+            <h1>XML Key Components</h1>
+            <div class="cards">
+                <div class="card">
+                    <p>An XML document is a tree of nodes. The following example includes the most common pieces: a
+                        declaration, a root element, nested elements, attributes, text, and a comment.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                  <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 101236.png" height="300" width="500"> 
+                </div>
+                <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 101327.png" height="300" width="500">
+            </div>
+            </div>
+        <hr>
+        <h3>XML syntax rules to remember</h3>
+        <div class="cards">
+            <div class="card">
+                <p>Element names are case-sensitive: <Name> and <name> are different names.
+                    <br>Every opened element must be closed, or be empty-element syntax such as <image/> .
+                    <br>Elements must be properly nested; <b><i>...</b></i> is not well-formed.
+
+                    <br>There must be exactly one document element (root), though it may contain many children.
+
+                    <br>Reserved characters in text must be escaped: use &amp; , &lt; , and &gt; for ampersand, less-
+                    than, and greater-than.</p>
+            </div>
+        </div>
+        <hr>
+        <h3>Namespaces</h3>
+        <div class="cards">
+            <div class="card">
+                <p>Namespaces prevent naming collisions when XML from different vocabularies is combined. A namespace
+                    prefix is connected to a URI by xmlns ; the URI identifies the vocabulary and does not have to be a
+                    working web page. Here, the unprefixed title and lib:title are distinct names because the latter belongs to the library
+                    namespace.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 101657.png" height="300" width="500">
+            </div>
+        </div>
+        <hr>
+    <div class="card"><a href="Unit 5.html">Back</a></div>
+    </body>
+</html>
+</>

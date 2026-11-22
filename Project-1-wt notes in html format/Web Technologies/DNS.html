@@ -1,0 +1,102 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Basics of HTML</title>
+        <style>
+            .card{
+                background: rgb(1, 1, 56);
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: rgb(241, 234, 234);
+                box-shadow: 0 0 15px rgb(22, 30, 66);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(8, 15, 36);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+ <!--Main body starts here-->
+    <body bgcolor="ACDDDE">
+        <h1>Dynamic IP Addresses and Dynamic DNS</h1>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <p>An IP address identifies a network interface for packet routing. A dynamic IP address is assigned for a
+                period (a lease) by a DHCP server. Home routers typically receive a public-facing address from an ISP and
+                separately assign private addresses to devices on the local network. The public address may change when
+                the lease is renewed or the connection changes; the exact policy depends on the provider.</p>
+            </div>
+            <div class="card">
+                <p>
+                    Why DDNS helps: A DNS name normally points to an address using records such as A (IPv4) or AAAA
+                    (IPv6). If a home-hosted server's public address changes, a DDNS client can authenticate to its provider and
+                    update the record. DNS caches may retain the old answer until the record's TTL expires. DDNS does not
+                    create a public IP, bypass carrier-grade NAT, open firewall ports, or make an unsafe server secure.
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Public address</h3>
+                <p>The Internet-facing address used by the router
+                or host. Some ISPs use carrier-grade NAT, so a
+                subscriber may not have a directly reachable
+                public IPv4 address.</p>
+            </div>
+            <div class="card">
+                <h3>Private address</h3>
+                <p>An internal address such as 192.168.1.20
+                used within a local network. It is not, by itself,
+                a public destination on the Internet.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Dynamic DNS (DDNS)</h3>
+                <p>A client updates a DNS record when the public
+                    address changes, so a hostname can continue
+                    to resolve to the latest address.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <p>Why DDNS helps: A DNS name normally points to an address using records such as A (IPv4) or AAAA
+                (IPv6). If a home-hosted server's public address changes, a DDNS client can authenticate to its provider and
+                update the record. DNS caches may retain the old answer until the record's TTL expires. DDNS does not
+                create a public IP, bypass carrier-grade NAT, open firewall ports, or make an unsafe server secure.</p>
+            </div>
+        </div>
+        <h3>Safe classroom simulation</h3>
+        <div class="cards">
+            <div class="card">
+                <p>The button below switches between two documentation-only example addresses. It simulates a DHCP lease
+                changing and a DDNS hostname being updated. It does not inspect or change your real network address. To inspect local interfaces on Linux, run ip -br address . This shows local interface addresses, not
+                necessarily your public IP. Use your router or ISP account to see the WAN address. A production DDNS
+                updater should use a provider's documented authenticated client or API and protect its credentials.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 202109.png" height="300" width="500">
+            </div>
+        </div>
+        <hr>
+        <div class="card"><a href="Unit 1.html">Back</a></div>
+</body>
+</html>
+</>

@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Basics of HTML</title>
+        <style>
+            .card{
+                background: rgb(1, 1, 56);
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: rgb(241, 234, 234);
+                box-shadow: 0 0 15px rgb(22, 30, 66);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(8, 15, 36);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+ <!--Main body starts here-->
+    <body bgcolor="ACDDDE">
+     <h1>Why CSS is needed?</h1>
+     <hr>
+     <p>HTML describes the meaning and structure of content. CSS controls how
+    that content is presented: its colors, typography, spacing, borders, and
+    layout.</p>
+    <div class="cards">
+        <div class="card">
+            <h3>Separate content and design</h3>
+            <p>Keep meaningful headings,
+            paragraphs, lists, and forms in
+            HTML. Put visual rules in CSS
+            instead of repeating presentation
+            attributes on every element.</p>
+        </div>
+        <div class="card">
+            <h3>Reuse one design</h3>
+            <p>
+                A single external stylesheet can
+                style many pages. Updating one
+                rule can keep a whole site
+                consistent.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Adapt to screens</h3>
+            <p>
+                Media queries and flexible layouts
+                let the same content work on phones, tablets, and desktop
+                displays.
+            </p>
+        </div>
+         <div class="card">
+            <h3>Reduce repeated work</h3>
+            <p>
+                Reusable selectors avoid copying
+                the same style declarations into every HTML document. Browsers
+                can also cache external
+                stylesheets.
+             </p>
+        </div>
+    </div>
+    <hr>
+    <h1>Same Content, Different Presentation</h1>
+    <p>Both examples below use the same words. CSS changes the second example's
+        typography, color, border, spacing, and depth.</p>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 125714.png" height="300" width="500">
+            </div>
+        </div>
+        <hr>
+        <h1>Three Ways to Add CSS</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 133948.png" height="300" width="500">
+            </div>
+        </div>
+        <hr>
+        <div class="card"><a href="Unit 3.html">Back</a></div>
+    <!--Main body ENDS here-->
+</body>    
+</html>
+</>

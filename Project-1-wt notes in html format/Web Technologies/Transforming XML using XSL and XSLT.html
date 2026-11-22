@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            List,Tables,Images,Forms
+        </title>
+        <style>
+            .card{
+                background: #5f051c;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                box-shadow: 0 0 15px #5f051c;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #5f051c;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+        <h1>Transforming XML using XSL and XSLT</h1>
+        <div class="cards">
+            <div class="card">
+                <p>XSL (Extensible Stylesheet Language) is a family of technologies for working with XML. Its key parts include
+                <br><br>XSLT (rules for transforming XML), XPath (expressions for selecting nodes and values), and XSL-FO
+                (formatting objects, commonly used for paginated output). In many introductory materials, “XSL” is used
+                informally to mean an XSLT stylesheet.
+                <br><br>XSLT reads a source XML tree, selects nodes with XPath, and applies template rules to produce a result.
+                The result can be HTML for a web page, another XML vocabulary, or plain text. XSLT changes the
+                representation of data; it does not change the source XML.</p>
+            </div>
+        </div>
+        <h3>Executable browser example</h3>
+        <div class="cards">
+            <div class="card">
+                <p>This workbench uses the browser's built-in DOMParser and XSLTProcessor . Edit the source XML or
+                    stylesheet, then run the transform. The included stylesheet selects each book and creates an HTML table.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 111317.png" height="300" width="500">
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 111339.png" height="300" width="500">
+            </div>
+        </div>
+        <h3>What the stylesheet does</h3>
+        <div class="cards">
+            <div class="card">
+                <p>< xsl:template match="/"> begins at the document root.
+                <br>< xsl:for-each select="catalog/book"> selects each book with an XPath expression and repeats
+                the enclosed output.
+                <br>< xsl:value-of select="@id"/> reads an attribute; selecting title or author reads an
+                element's text.
+                Literal HTML tags such as < table> become part of the result document.</p>
+            </div>
+        </div>
+        <h3>Connect an XML file to a stylesheet</h3>
+        <div class="cards">
+            <div class="card">
+                <p>For a standalone XML file, an xml-stylesheet processing instruction can associate it with an XSLT file.
+                    Save the XML and XSLT files together and open the XML in a browser that supports this instruction. For a command-line demonstration, save the source as catalog.xml and the stylesheet from the
+                    workbench as catalog.xsl , then run xsltproc catalog.xsl catalog.xml . The transformed HTML
+                    is written to standard output; xsltproc is available with libxslt.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 111753.png" height="300" width="500">
+            </div>
+        </div>
+         <hr>
+       <div class="card"> <a href="Unit 5.html">Back</a></div>
+    </body>
+</html>
+</>

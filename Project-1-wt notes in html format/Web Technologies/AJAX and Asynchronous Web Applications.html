@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            XHTML:Meta Tags
+        </title>
+        <style>
+            .card{
+                background:#1d1836;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #1a1242;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #1a1242;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D5BEEB">
+        <h1>AJAX and Asynchronous Web Applications</h1>
+            <div class="cards">
+                <div class="card">
+                    <p>AJAX stands for Asynchronous JavaScript and XML. The name comes from an
+                        earlier period of web development, when XML was a common response format. Today, AJAX describes the broader technique of sending an HTTP request from
+                        JavaScript and updating part of the page with the response, without loading a
+                        new document. JSON is common, but a response can also be text, HTML, XML, or
+                        another resource type.</p>
+                </div>
+                <div class="card">
+                    <p>
+                        This pattern is useful when only one part of a page needs new information:
+                        searching a catalog, refreshing messages, checking a username, or submitting a
+                        form. It can reduce unnecessary page reloads and data transfer. The browser still
+                        needs a server or API to provide real data; AJAX is the communication pattern,
+                        not a server or database by itself.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Request and Response Cycle</h3>
+                    <p>1. A user action or another event starts a request to a server URL, often called
+                        an endpoint.
+                       <br> 2. The browser sends the request, usually with a method such as GET to
+                        retrieve data or POST to send data.
+                        <br>3. The server returns a response containing a status and, when appropriate, a
+                        body such as JSON or text.
+                        <br>4. JavaScript checks the response, reads the body, and updates the needed DOM
+                        elements.
+                        <br>5. The rest of the document stays in place; the interface can show loading,
+                        success, or error feedback along the way.</p>
+                </div>
+                <div class="card">
+                    <h3>What Asynchronous Means</h3>
+                    <p>A synchronous operation makes the next step wait for the current one to finish. A
+                        network request can take a noticeable amount of time, so browser APIs such as
+                        fetch() work asynchronously: they return a Promise representing work that
+                        will finish later. While the browser handles the network activity, JavaScript can
+                        continue responding to events and the page can remain interactive.
+                        When the response arrives, the promise is fulfilled with a Response , or rejected
+                        for a network-level problem. The response body is read separately and
+                        asynchronously. An async function lets us write this sequence with await ;
+                        await pauses that function until its promise settles, not the whole browser
+                        interface. Asynchronous does not mean that every JavaScript instruction runs in
+                        parallel.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Using Fetch and Handling Errors</h3>
+                    <p>fetch() is the modern browser API for HTTP requests. A successful call gives
+                        JavaScript a response object, but an HTTP error status such as 404 or 500
+                        does not normally reject the fetch promise. Check response.ok before reading
+                        the body. Then use response.json() for JSON; it returns a promise too, and it
+                        can fail if the body is not valid JSON.</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 112315.png" height="300" width="500">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <p>In this example, /api/courses is a placeholder endpoint. It must exist and
+                        return JSON containing an array of course objects with a name property. The
+                        try...catch handles network errors, non-success HTTP statuses that we
+                        explicitly turn into errors, and problems reading or parsing the response body.</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 112440.png" height="300" width="500">
+                </div>
+            </div>
+        <hr>
+<div class="card"><a href="Unit 2.html">Back</a></div>
+
+    </body>
+</html>
+</>

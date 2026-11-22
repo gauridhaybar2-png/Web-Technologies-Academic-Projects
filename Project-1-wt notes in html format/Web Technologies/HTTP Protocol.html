@@ -1,0 +1,95 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Color and Hyperlinks
+        </title>
+         <style>
+            .card{
+                background:#01391A;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #01391A;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #01391A;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+            <h1>HTTP Protocol: Request and Response</h1>
+            <div class="cards">
+                <div class="card">
+                    <p>HTTP (Hypertext Transfer Protocol) is a stateless application-layer protocol used to exchange requests and
+                    responses. A request identifies a method and target and may include headers and a body. A response
+                    includes a status code, headers, and an optional body. Cookies or application tokens can be used to
+                    associate multiple requests with a session.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                   <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 154147.png" height="300" width="500"> 
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 154247.png" height="300" width="500">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 154340.png" height="300" width="500">
+                </div>
+            </div>
+            <h3>Common methods and status codes</h3>
+            <div class="cards">
+                <div class="card">
+                    <p>GET retrieves a representation; POST submits data; PUT replaces a resource; DELETE requests
+                        deletion.
+                        <br><br>200 means success; 201 means created; 301 / 302 indicate redirects; 400 is a bad request; 401
+                        is unauthenticated; 403 is forbidden; 404 is not found; 500 is a server error.
+                        <br><br>HTTPS protects HTTP traffic in transit with TLS. It does not by itself prove that a site is trustworthy or
+                        that its content is safe.</p>
+                </div>
+            </div>
+            <h3>Run a real local HTTP request and response</h3>
+            <div class="cards">
+                <div class="card">
+                    <p>The following browser demo calls a local Node.js server and displays the actual HTTP status, response
+                    content type, and returned JSON. To run it, save the server code below as server.mjs beside this HTML
+                    file, install Node.js if needed, run node server.mjs , and open http://localhost:8080 . The API and
+                    page are same-origin and remain on your own computer.</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 154603.png" height="300" width="500"> 
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 154720.png" height="300" width="500">
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 154820.png" height="300" width="500">
+                </div>
+            </div>
+        <hr>
+        <div class="card"><a href="Unit 1.html">Back</a></div>
+</body>
+</html>
+</>

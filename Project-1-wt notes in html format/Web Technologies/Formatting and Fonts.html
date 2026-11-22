@@ -1,0 +1,823 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Formatting and Fonts
+             </title>
+             <style>
+            .card{
+                background:#352018;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #FFC7C7;
+                 box-shadow: 0 0 25px rgb(34, 10, 10);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(34, 10, 10);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+       
+    </head>
+    <body bgcolor="#FFC7C7">
+        <h1 style="color: #2f1308;">Formatting and Fonts</h1>
+        <h4 style="color: #2f1308;"><i>An essential guide to text styling and typography in HTML</i></h4>
+        <hr>
+<!--Start of HTML Display-->        
+        <h1 style="color: #2f1308;">HTML Display</h1>
+        <h4 style="color: #2f1308;"><i>How web browsers handle spaces,line breaks and responsive window reseizing.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Display Rules</h3>
+                <ul>
+                    <li>Unpredictable Output:You cannot be sure exactly how HTML will be displayed ; screen sizes and resized windows create different results.</li>
+                    <li>Code Spacing:Adding extra spaces or empty lines in your HTML code will not change how the content is rendered.</li>
+                    <li>Automatic Clean-up:The browser automatically collapses multiple spaces and discards line breaks when rendering the page.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Whitespace Ignored</h3>
+                <p>Even with extra lines and spaces in the source:</p>
+                <pre style="color:aquamarine;">
+                    < p >
+                    This Paragraph
+                    contains          a lot of spaces
+                    and lines,but browser ignores it.
+                    < /p >
+                </pre>
+                <h3>Result:</h3>
+                <p>Renders as a single continuous line,completely ignoring the formatted white space in your editor.</p>
+            </div>
+        </div>
+<!--End of HTML Display-->   
+
+<!--Start of HTML Horizontal rules-->
+          <h1 style="color: #2f1308;">HTML Horizontal Rules</h1>
+          <h4 style="color: #2f1308;"><i>Using the < hr > tag to define thematic breaks and separate content in web pages.</i></h4>
+          <div class="cards">
+            <div class="card">
+                <h3>Horizontal Rule Basics</h3>
+                <ul>
+                    <li>Thematic Break:The HTML < hr > element defines a thematic break in a page , typically dispalyed as a horizontal line.</li>
+                    <li>Separation:It is most commmonly used to visual separate distinct content blocks or define transitions.</li>
+                    <li>Empty Tag: The < hr > tag is a self closing or empty element , meaning it has no companion end tag.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <p>How thematic breaks separate marup blocks:</p>
+                <pre style="color:aquamarine;">
+                    < h1 >This is heading< /h1 >
+                    < p >This is some text< /p >
+                    < hr >
+                    < h2 >This is heading< /h2 >
+                    < p >This is some other text< /p >
+                    < hr >
+                </pre>
+                <h3>Note:</h3>
+                <p>The divider lines separate the layout structure when parsed by browsers.</p>
+            </div>
+          </div>
+<!--end of HTML Horizontal rules-->
+
+<!--Start of HTML Line breaks-->
+        <h1 style="color: #2f1308;">HTML Line Breaks</h1>
+        <h4 style="color: #2f1308;"><i>How to insert manual line breaks within paragraphs without creating new text blocks</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Line Break Basics</h3>
+                <ul>
+                    <li>Line Break:The HTML < br > element defines a manual line break in a web page.
+                    </li>
+                    <li>No New Paragraph: Use it to force a new line of text without starting a new paragraph container.</li>
+                    <li>Empty Element: The < br > tag is an empty / self-closing element, meaning it has no companion end tag.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <p>How manual breaks structure paragraph output:</p>
+                <pre style="color:aquamarine;">
+                    < p >This is< br >
+                    a paragraph< br > 
+                    with line breaks< /p >
+                </pre>
+                <h3>Note:</h3>
+                <p>This code forces the browser to render the text split into three separate vertical lines while keeping it inside a single logical paragraph container.</p>
+            </div>
+        </div>
+<!--end of HTML Line breaks-->
+
+<!--Start of the poem problem-->
+          <h1 style="color: #2f1308;">The Poem Problem<h1>
+            <h4 style="color: #2f1308;"><i>Understanding why standard HTML paragraph tags collapse spaces and new lines</i></h4>
+            <div class="cards">
+                <div class="card">
+                    <h3>Why It Happens</h3>
+                    <ul>
+                        <li>White Space Collapsing:Browsers automatically collapse consecutive spaces,tabs,and a line breaks in the HTML source code into a single space.</li>
+                        <li>Paragraph Formatting:The standard < p > element is designed for continous body text , not structural or poetic layout.</li>
+                        <li>The Problem:Writting a poem across multiple lines in your code editor will still display as a single line in the browser.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Source Code VS Output</h3>
+                    <p>HTML Source Code:</p>
+                    <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\poem problem.png" height="300" width="500">
+                    <p>Browser Rendered Output:</p>
+                    <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\poem problem output.png" width="500">
+                </div>
+            </div>
+<!--end of the poem proble-->
+
+<!--Start of the solution-->
+      <h1 style="color: #2f1308;">Solution-The HTML < pre >  Element</h1>
+      <h4 style="color: #2f1308;"><i>Using the < pre >tag to dispaly preformatted text with preserved spaces and line breaks</i></h4>
+      <div class="cards">
+        <div class="card">
+            <h3>Preformatted Text Basics</h3>
+            <ul>
+                <li style="color:aquamarine">Definition:</li>The HTML < pre > element defines preformatted text.
+                <li style="color:aquamarine">Preservation:</li>It preserves both spaces and manual line breaks exactly as they are written in source code.
+                <li style="color:aquamarine">Monospace Font:</li>The text inside a < pre > element is automatically dispalyed in a fixed-width,Monospacefont.
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3>Code Example</h3>
+            <p>How preformatted code maintains structural breaks:</p>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\solution input.png" height="300" width="500">
+            <p>Note:Browsers preserves the poetic layout,displaying each verse on its own line exactly as written in the source.</p>
+
+        </div>
+        </div>
+            <div class="cards">
+                <div class="card">
+            <p>Browser Rendered Output</p> 
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\solution output.png" height="300" width="500">
+       </div>
+      </div>
+<!--end of the solution-->
+
+<!--Start of HTML styles-->
+        <h1 style="color: #2f1308;">HTML Styles</h1> 
+        <h4 style="color: #2f1308;"><i>Using the style attribute to define inline CSS rules for colors,fonts,sizing and layouts</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Style Attribute Basics</h3>
+                <ul>
+                    <li style="color:aquamarine">Inline Styling:</li>The HTML style attribute allows you to apply CSS styling rules directly inside an element tag.
+                    <li style="color:aquamarine">Property & Values:</li>Style consist of a property and value separated by a colon , ending with a semicolon.
+                    <li style="color:aquamarine">Direct Override:</li>Inline styles take precedence over external stylesheets , making them ideal for quick, specific overrides.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example & Output</h3>
+                <p>HTML Code:</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\style input.png" height="300" width="500">
+                </div>
+                </div>
+                <div class="cards">
+                <div class="card"> 
+                <p>Rendered Preview:</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\style output.png" height="300" width="500">
+            </div>
+            </div>
+        </div>
+<!--end of HTML styles-->
+
+<!--Start of HTML Style Attribute-->
+           <h1 style="color: #2f1308;">The HTML Style Attribute</h1>
+           <h4 style="color: #2f1308;"><i>Syntax and Structure of inline CSS styling in HTML elements</i></h4>
+           <div class="cards">
+            <div class="card">
+                <h3>Style Basics</h3>
+                <ul>
+                    <li style="color:aquamarine">Inline Styling:</li>Setting the style of an HTML element is done directly inside the element tag using the style attribute.
+                    <li style="color:aquamarine">CSS Declarations:</li>Each style declaration consists of a property and a value , separated by a colon and ending with a semicolon.
+                    <li style="color:aquamarine">Style Precedence:</li>Inline styles override general styles defined in external stylesheets or style blocks.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Syntax & Blueprint</h3>
+                <p>The standard format of the inline style attribute.</p>
+                <p style="color:aquamarine">< tagname style=" property :value;" ></p>
+                <ul>
+                    <li style="color:aquamarine">tagname:</li>The HTML element(e.g. p,h1,body)
+                    <li style="color:aquamarine">property:</li>The CSS property you want to change (e.g.color)
+                    <li style="color:aquamarine">value:</li>The value assigned to the CSS property(e.g. blue)
+                </ul>
+            </div>
+           </div>
+<!--end of HTML Style Attribute-->
+
+<!--Start of Background color-->
+      <h1 style="color: #2f1308;">Background Color</h1>
+      <h4 style="color: #2f1308;"><i>Defining background colors for HTML elements using the inline CSS background -color-property</i></h4>  
+      <div class="cards">
+        <div class="card">
+            <h3>Background Color Basics</h3>
+            <ul>
+                <li style="color:aquamarine">Element Background:</li>The CSS background - color property defines the background color for any HTML element.
+                <li style="color:aquamarine">Target Element:</li>It can be applied to page containers like < body > or individual text blocks like heading and paragraphs.
+                <li style="color:aquamarine">Value Formats:</li>Supports standard color names (e.g. powerblue),hexadecimal codes , or RGB values.
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Code Example & Output</h3>
+            <p>HTML Code:</p>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\basic html document.png" height="300" width="500">
+        </div>
+      </div> 
+      <div class="cards">
+        <div class="card">
+            <h3>Rendered Output Preview</h3>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\basic html document output(1).png" height="300" width="500">
+        </div>
+      </div>        
+<!--End of Background color-->
+
+<!--Start of Background color example-->
+       <h1 style="color: #2f1308;">Background Color Example</h1>
+       <h4 style="color: #2f1308;"><i>Applying distinct inline background-color styles to separate HTML elements within a page</i></h4>
+       <div class="cards">
+        <div class="card">
+            <h3>Multiple Backgrounds</h3>
+            <ul>
+                <li style="color:aquamarine">Independent Styling:</li>HTML allows each individual element to declare its own unique backgroundcolor via the inline style attribute.
+                <li style="color:aquamarine">Scope:</li>Unlike setting a backgroundon the < body >,targeting specific block elements limits the backgroundto the boundaries of those elements.
+                <li style="color:aquamarine">Visual Hierarchy:</li>Using contrasting background colors helps partition content blocks and draw attention to structural divisions. 
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Code Example & Output</h3>
+            <p>HTML Code:</p>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\background colorinput.png" height="300" width="500">
+        </div>
+       </div>
+       <div class="cards">
+        <div class="card">
+            <p>Rendered Output Preview:</p>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\backgroundcolor output.png" height="300" width="500">
+        </div>
+       </div>
+<!--end of Background color example-->
+
+<!--Start of Text Color-->
+         <h1 style="color: #2f1308;">Text Color</h1>
+         <h4 style="color: #2f1308;"><i>Defining text colors for HTML elements using the inline CSS color property</i></h4>
+         <div class="cards">
+            <div class="card">
+                <h3>Text Color Basics</h3>
+                <ul>
+                    <li style="color:aquamarine">Inline Coloring:</li>The HTML color property specifies the foreground color of text within any HTML element.
+                    <li style="color:aquamarine">Element Scope:</li>It can be applied inline to headings(< h1 >),paragraphs(< p >),or spans to color specific text ranges.
+                    <li style="color:aquamarine">Value Formats:</li>Supports standard color names , hexadecimal color values or RGB/HSL coordinates.
+                </ul>
+            </div>
+            <div class="card">
+                <p>HTML Code</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\text color input.png" height="300" width="500">
+            </div>
+         </div>
+         <div class="cards">
+            <div class="card">
+                <p>Rendered Output Preview</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\text color output.png" height="300" width="500">
+            </div>
+         </div>
+<!--end of Text Color-->
+
+<!--Start of FONTS-->
+        <h1 style="color: #2f1308;">Fonts</h1>
+        <h4 style="color: #2f1308;"><i>Defining font families for HTML elements using the inline CSS font-family property</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Font Basics</h3>
+                <ul>
+                    <li style="color:aquamarine">Font Family:</li>The CSS font-family property defines the exact font to be used for rendering an HTML element.
+                    <li style="color:aquamarine">Fallbacks:</li>Best practice is to list multiple font names as fallbacks,ending with a generic family name like sans-serif or Monospace.
+                    <li style="color:aquamarine">Specific style:</li>Inline font selection allows individual text segments to project a tailored mood or aesthetic.
+                </ul>
+            </div>
+            <div class="card">
+                <p>HTML code:</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\font input.png" height="300" width="500">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <p>Rendered Output Preview</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\font output.png" height="300" width="500">
+            </div>
+        </div>
+<!--End of FONTS-->
+
+<!--Start of Text Size-->
+        <h1 style="color: #2f1308;">Text Size</h1>
+        <h4 style="color: #2f1308;"><i>Defining text sizes for HTML element using the inline CSS font-size property</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Text Size Basics</h3>
+                <ul>
+                    <li style="color:aquamarine">Font Size Property:</li>The CSS font size property defines the exact text size for an HTML elements.
+                    <li style="color:aquamarine">Value Formats:</li>Supports percentage value , absolute units like pixels or relative units.
+                    <li style="color:aquamarine">Visual Hierarchy:</li>Scaling text dynamically establishes clear content priority and enhances user readability.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code example & output</h3>
+                <p>HTML Code</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\fontsizeinput.png" height="300" width="500">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Rendered Output Preview:</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\font output.png" height="300" width="500">
+            </div>
+        </div>
+<!--End of Text SIZE-->
+
+<!--START OF TEXT ALIGNMENT-->
+        <h1  style="color: #2f1308;">Text Alignment</h1>
+        <h4  style="color: #2f1308;"><i>Defining horizontal text alignment for HTML elements using the inline CSS text - align property.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Alignment Basics</h3>
+                <ul>
+                    <li style="color:aquamarine">Property Purpose:</li>The CSS text-align propertydefines the horizontal text alignment for an HTML element.
+                    <li style="color:aquamarine">Standard Values:</li>Supports values like centre,left,right and justify to position text block elements.
+                    <li style="color:aquamarine">Centre Alignment:</li>Centering headings and paragraphs helps establish a clean ,symmetric visual focus on structured pages.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example & Output</h3>
+                <p>HTML code:</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\align input.png" height="300" width="500">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Rendered Output Preview:</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\align output.png" height="300" width="500">
+            </div>
+        </div>
+<!--end of text alignment-->
+
+<!--Start of HTML text formating-->
+     <h1  style="color: #2f1308;">HTML Text Formatting</h1>
+     <h4  style="color: #2f1308;"><i>HTML contains several elements for defining text with a special meaning.</i></h4>
+     <div class="cards">
+        <div class="card">
+            <h3>Formatting Tags</h3>
+            <ul>
+                <li style="color:aquamarine">Bold Text (< b >):</li>Used to draw attention or highlight keywords without implying extra importance.
+                <li style="color:aquamarine">Italic (< i >):</li>Typically used to indicate idiomatic terms , technical terms or taxonomic designations.
+                <li style="color:aquamarine">Subscript(< sub >):</li>Defines subscript text, which appears half a character below the normal line.
+                <li style="color:aquamarine">Superscript(< sup >):</li>Defines Superscripttext,which appears half a character above the normal line.
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Code Example</h3>
+            <p>HTML Source:</p>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\format input.png" height="300" width="500">
+        </div>
+     </div>   
+     <div class="cards">
+        <div class="card">
+            <h3>Rendered Output Preview:</h3>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\format output.png" height="300" width="500">
+        </div>
+     </div>
+<!--end of HTML text formating-->
+
+<!--start of HTML Formatting Elements-->
+        <h1 style="color: #2f1308;">HTML Formatting Elements</h1>
+        <h4 style="color: #2f1308;"><i>Special elements designed to style and display text with specific visual or semantic meanings.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Visual Formatting Tags</h3>
+                <pre>
+                    < b >     - Bold Text
+                    < i >     - Italic Text
+                    < mark >  - Marked/highlighted text
+                    < small > - Smaller Text
+                    < del >   - Deleted Text(strikethrough)
+                    < ins >   - Inserted Text(Underlined)
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Semantic & Positioning Tags</h3>
+                <pre>
+                < strong > - Important text with strong 
+                             semantic meaning<br>
+                < em >     - Emphasized text 
+                            (typically italicized)<br>
+                < sub >    - Subscript text
+                             (shifted slightly below standard baseline)<br>
+                < sup >    - Superscript text
+                             (shifted slightly above standrad baseline)<br>
+                            </pre>
+            </div>
+        </div> 
+<!--End of HTML Formatting elements-->
+
+<!--START OF HTML <b> and <strong> element-->
+        <h1 style="color: #2f1308;">HTML < b > and < strong > Elements</h1>
+        <h4 style="color: #2f1308;"><i>Definingbold text styling in HTML documents without conveying extra semantic importance</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">The < b > Tag:</li>The HTML < b > element is used to style text in bold physically.
+                    <li style="color:aquamarine">Visual Emphasis:</li>It draws immediate reader attention or highlights keywords on the page.
+                    <li style="color:aquamarine">Semantic Meaning:</li>Bold styling is applied purely as a visual treatment, without conveying any extra semantic importance or urgency.
+                    <li style="color:aquamarine">The < strong > tag:</li>The HTML < strong > element defines text with strong importance.
+                    <li style="color:aquamarine">Visual Style:</li>The content inside a strong element is typically displayed in a bold by default.
+                    <li style="color:aquamarine">Semantic Values:</li>Unlike < b > , < strong > has semantic meaning , indicating that the
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <p>HTML Source:</p>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\strong output.png" height="300" width="500">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Rendered Output Preview:</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\strong input.png" height="300" width="500">
+            </div>
+        </div>
+<!--END OF HTML <b> and <strong> element-->   
+    
+<!--Start of HTML <i> and <em< element-->    
+        <h1  style="color: #2f1308;">HTML < i > and < em > Elements</h1>
+        <h4  style="color: #2f1308;"><i>Defining alternative voice,mood and semantic emphasis in HTML documents.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML < i > Element</h3>
+                    <ul>
+                        <li style="color:aquamarine">Alternative Voice:</li>Defines text in an alternatevoice or mood .Typically displayed in italic.
+                        <li style="color:aquamarine">Usage:</li>Commmonly used for technical terms,phrases fromother languages , thoughts or ship names.
+                        <h3>HTML Source:</h3>
+                        < i >This text is italic< /i >
+                        <h3>Rendered Output Preview:</h3>
+                        <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\italic.png" width="400" height="35">
+                    </ul>
+            </div>
+            <div class="card">
+                <h3>HTML < em > Element</h3>
+                <ul>
+                    <li style="color:aquamarine">Emphasized Text:</li>Defines text with semantic emphasis.Typically displayed in italics by browsers.
+                    <li style="color:aquamarine">Screen Readers:</li>A screen reader will pronounce words inside < em > with verbal stress and emphasis.
+                </ul>
+            
+            <h3>HTML Source:</h3>
+            < em >This text is italic< /em >
+            <h3>Rendered Output Preview:</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\italic.png" width="400" height="35">
+            </div>
+            </div>
+<!--End of HTML <i> and <em< element-->
+    
+ <!--Start of small elememnt-->
+        <h1 style="color: #2f1308;">HTML < small > Element</h1>
+        <h4 style="color: #2f1308;"><i>Defining smaller text,side comments and legal print in HTML documents.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">The < small > Tag:</li>The HTML < small > element is used to style text one size smaller than the surrounding text.
+                    <li style="color:aquamarine">Use Cases:</li>Commonly used for legal disclaimers,
+                    copyright details, terms of use, or side comments.
+                    <li style="color:aquamarine">Visual Appeal:</li>It provides clear content hierarchy
+                    by physically reducing text scale without losing
+                    basic readability.
+
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <p>HTML source:</p>
+                <pre>
+                    < p >This is some normal text.< /p >
+                    < p >< small >This is some smaller
+                    text.< /small >< /p >
+                </pre>
+                <h3>Rendered Output Preview:</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\Screenshot 2026-09-26 172313.png" height="200" width="500">
+            </div>
+            </div>
+        </div>
+ <!--End of small element-->
+ <!--Start of mark element-->
+         <h1 style="color: #2f1308;">HTML < mark > Element</h1> 
+          <h4 style="color: #2f1308;">Defining marked or highlighted text for visual prominence in HTML documents</h4> 
+          <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine"> The < mark > Tag:  </li>The HTML < mark > element 
+defines text that should be marked or highlighted.
+                    <li style="color:aquamarine"> Visual Relevance: </li>Typically used to draw the 
+user's attention to specific words, rendering with a 
+yellow background
+                    <li style="color:aquamarine">Semantic Use: </li>: Ideal for highlighting search 
+results or indicating contextually relevant keywords 
+within a passage
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <p>HTML Source:
+                < p >Do not forget to buy < mark >milk< /mark > 
+                today.< /p ></p>
+                <h3>Rendered Output Preview:</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\Screenshot_26-9-2026_173729_.jpeg" height="200" width="500">
+            </div>
+          </div>
+ <!--End od mark element-->
+ <!--start of HTML <del> Element-->
+        <h1 style="color: #2f1308;">HTML < del > Element</h1>
+        <h4 style="color: #2f1308;"><i>Defining deleted or removed text for visual clarity in HTML documents</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concep</h3>
+                <ul>
+                    <li style="color:aquamarine"> The < del > Tag: </li>The HTML < del > element is used to 
+define text that has been deleted or removed from 
+a document
+                    <li style="color:aquamarine">Visual Relevance:</li>: Browsers will usually render a 
+strike-through line directly through the deleted text.
+                    <li style="color:aquamarine">Use Cases:</li> Perfect for showing edits, revisions, 
+outdated prices, or modifications in collaborative 
+documents.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <p>HTML Source:</p>
+                < p >My favorite color is < del >blue< /del > 
+red.< /p >
+                <h3>Rendered Output Preview:</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\Screenshot_26-9-2026_174727_.jpeg" height="200" width="500">
+            </div>
+        </div>
+<!--end of HTML <del> Element-->
+    
+    
+    <!--######################################-->
+<!--Start of HTML <ins> Element-->
+        <h1 style="color: #2f1308;">HTML < ins > Element</h1>
+        <h4 style="color: #2f1308;"><i>Defining inserted or added text for visual clarity in HTML documents.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">The < ins > Tag:</li>The HTML < ins > element defines text that has been inserted into a document.
+                    <li style="color:aquamarine">Visual Relevance:</li>Browsers will usually underline inserted text to visually distinguish it from surrounding content.
+                    <li style="color:aquamarine">Semantic Use:</li>Commonly paired with the < del > tag to clearly demonstrate editorial changes, updates, or corrections.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <p>HTML Source:</p>
+                <pre>
+&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt;
+&lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;
+                </pre>
+                <h3>Rendered Output Preview:</h3>
+                <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+            </div>
+        </div>
+<!--End of HTML <ins> Element-->
+
+<!--Start of HTML <sub> Element-->
+        <h1 style="color: #2f1308;">HTML < sub > Element</h1>
+        <h4 style="color: #2f1308;"><i>Defining subscript text for chemical formulas and mathematical notation in HTML documents.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">The < sub > Tag:</li>The HTML < sub > element is used to define subscript text in a document.
+                    <li style="color:aquamarine">Visual Relevance:</li>Subscript text appears half a character below the normal line, often rendered in a smaller font.
+                    <li style="color:aquamarine">Use Cases:</li>Commonly used for chemical formulas like H2O or mathematical expressions.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example & Output</h3>
+                <p>HTML Source:</p>
+                <pre>&lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;</pre>
+                <h3>Rendered Output Preview:</h3>
+                <p>This is <sub>subscripted</sub> text.</p>
+            </div>
+        </div>
+<!--End of HTML <sub> Element-->
+
+<!--Start of HTML <sup> Element-->
+        <h1 style="color: #2f1308;">HTML < sup > Element</h1>
+        <h4 style="color: #2f1308;"><i>Defining superscript text for footnotes, mathematical exponents, and ordinal indicators in HTML documents.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">The < sup > Tag:</li>The HTML < sup > element is used to define superscript text in a document.
+                    <li style="color:aquamarine">Visual Relevance:</li>Superscript text appears half a character above the normal line, often rendered in a smaller font.
+                    <li style="color:aquamarine">Use Cases:</li>Commonly used for footnotes like WWW[1], mathematical exponents like x², or ordinal abbreviations.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example & Output</h3>
+                <p>HTML Source:</p>
+                <pre>&lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;</pre>
+                <h3>Rendered Output Preview:</h3>
+                <p>This is <sup>superscripted</sup> text.</p>
+            </div>
+        </div>
+<!--End of HTML <sup> Element-->
+
+<!--Start of HTML Quotation and Citation Elements-->
+        <h1 style="color: #2f1308;">HTML Quotation and Citation Elements</h1>
+        <h4 style="color: #2f1308;"><i>Defining block quotations and citations within HTML documents.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Quotation & Citation Tags</h3>
+                <pre>
+&lt;blockquote&gt; - Defines a section quoted from another source
+&lt;q&gt;          - Defines a short inline quotation
+&lt;abbr&gt;       - Defines an abbreviation or acronym
+&lt;address&gt;    - Defines contact information
+&lt;cite&gt;       - Defines the title of a creative work
+&lt;bdo&gt;        - Defines bidirectional text override
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Semantic Elements</h3>
+                <p>These elements provide meaningful information about quotations, abbreviations, contact information, creative works and text direction.</p>
+            </div>
+        </div>
+<!--End of HTML Quotation and Citation Elements-->
+
+<!--Start of HTML <blockquote> Element-->
+        <h1 style="color: #2f1308;">HTML < blockquote > for Quotations</h1>
+        <h4 style="color: #2f1308;"><i>Implementing and styling block-level quotation elements in HTML documents.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">Key Purpose:</li>Defines a block section that is quoted directly from an external source or reference.
+                    <li style="color:aquamarine">Visual Presentation:</li>Browsers naturally indent both left and right margins of a < blockquote > element.
+                    <li style="color:aquamarine">Source Attribution:</li>Utilize the optional cite attribute to embed the source URL directly in the markup.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example & Output</h3>
+                <pre>
+&lt;blockquote cite="http://www.worldwildlife.org"&gt;
+For 60 years, WWF has worked to help...
+&lt;/blockquote&gt;
+                </pre>
+                <h3>Rendered Output Preview:</h3>
+                <blockquote cite="http://www.worldwildlife.org">
+                    For 60 years, WWF has worked to help...
+                </blockquote>
+            </div>
+        </div>
+<!--End of HTML <blockquote> Element-->
+
+<!--Start of HTML <q> Element-->
+        <h1 style="color: #2f1308;">HTML < q > for Short Quotations</h1>
+        <h4 style="color: #2f1308;"><i>Defining and displaying inline short quotations with automatic browser formatting.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">Key Purpose:</li>Defines a short, inline quotation within a paragraph or text block.
+                    <li style="color:aquamarine">Auto-Formatting:</li>Browsers normally insert quotation marks around the text wrapped in the < q > tag.
+                    <li style="color:aquamarine">Inline Nature:</li>Unlike < blockquote >, the < q > tag is meant for short quotes that do not require paragraph breaks.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code & Preview</h3>
+                <pre>&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people
+live in harmony with nature.&lt;/q&gt;&lt;/p&gt;</pre>
+                <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+            </div>
+        </div>
+<!--End of HTML <q> Element-->
+
+<!--Start of HTML <abbr> Element-->
+        <h1 style="color: #2f1308;">HTML < abbr > for Abbreviations</h1>
+        <h4 style="color: #2f1308;"><i>Marking up abbreviations to provide useful information to browsers, translation systems, and search engines.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">Key Purpose:</li>Defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", or "ATM".
+                    <li style="color:aquamarine">Semantic Value:</li>Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+                    <li style="color:aquamarine">Global Title:</li>Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code & Preview</h3>
+                <pre>&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;
+was founded in 1948.&lt;/p&gt;</pre>
+                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+            </div>
+        </div>
+<!--End of HTML <abbr> Element-->
+
+<!--Start of HTML <address> Element-->
+        <h1 style="color: #2f1308;">HTML < address > for Contact Information</h1>
+        <h4 style="color: #2f1308;"><i>Defining contact information for the author/owner of a document or an article.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">Key Purpose:</li>Defines the contact information for the author/owner of a document or an article.
+                    <li style="color:aquamarine">Supported Types:</li>Can be an email address, URL, physical address, phone number, social media handle, etc.
+                    <li style="color:aquamarine">Formatting:</li>Usually renders in italic. Browsers always add a line break before and after the element.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code & Preview</h3>
+                <pre>
+&lt;address&gt;
+Written by John Doe.&lt;br&gt;
+Visit us at:&lt;br&gt;
+Example.com
+&lt;/address&gt;
+                </pre>
+                <address>
+                    Written by John Doe.<br>
+                    Visit us at:<br>
+                    Example.com
+                </address>
+            </div>
+        </div>
+<!--End of HTML <address> Element-->
+
+<!--Start of HTML <cite> Element-->
+        <h1 style="color: #2f1308;">HTML < cite > for Work Title</h1>
+        <h4 style="color: #2f1308;"><i>Defining the title of a creative work like books, poems, movies, or paintings in HTML.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">Key Purpose:</li>Defines the title of a creative work such as a book, poem, song, movie, painting, or sculpture.
+                    <li style="color:aquamarine">Exclusion Rule:</li>A person's name is not the title of a work.
+                    <li style="color:aquamarine">Formatting:</li>The text in the < cite > element usually renders in italic.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code & Preview</h3>
+                <pre>&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch.
+Painted in 1893.&lt;/p&gt;</pre>
+                <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+            </div>
+        </div>
+<!--End of HTML <cite> Element-->
+
+<!--Start of HTML <bdo> Element-->
+        <h1 style="color: #2f1308;">HTML < bdo > for Bi-Directional Override</h1>
+        <h4 style="color: #2f1308;"><i>Overriding the default text direction for bidirectional text layouts.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Element Concept</h3>
+                <ul>
+                    <li style="color:aquamarine">Key Purpose:</li>Defines a bi-directional override, forcing the enclosed text to render in a specific direction.
+                    <li style="color:aquamarine">Mandatory Attribute:</li>Requires the dir attribute with "rtl" or "ltr" to function.
+                    <li style="color:aquamarine">Common Use:</li>Crucial for correctly displaying mixed-direction scripts like Arabic, Hebrew, or Persian inside standard LTR pages.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code & Preview</h3>
+                <pre>&lt;bdo dir="rtl"&gt;
+This text will be written from right to left
+&lt;/bdo&gt;</pre>
+                <bdo dir="rtl">This text will be written from right to left</bdo>
+            </div>
+        </div>
+<!--End of HTML <bdo> Element-->
+    <hr>
+    <div class="card"><a href="Unit 2.html">Back</a></div>
+    </body>
+</html>
+</>

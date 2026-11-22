@@ -1,0 +1,635 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            List,Tables,Images,Forms
+        </title>
+        <style>
+            .card{
+                background: #5f051c;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                box-shadow: 0 0 15px #5f051c;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #5f051c;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+        <h1 style="color:#37020f ;">List,Table,Images,Forms</h1>
+        <h4 style="color:#37020f ;"><i>An essential guide to structured layouts,tabular data,media and interactive elements in HTML.</i></h4>
+        <hr>
+        <!--Start of HTML Lists-->
+        <h1 style="color: #37020f;">HTML Lists</h1>
+        <h4 style="color: #37020f;"><i>HTML lists allow web developers to group a set of related items into organized structures.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Unordered HTML List</h3>
+                <p>Defines a bulleted list where the order of items does not explicitly matter.</p>
+                <pre>
+&lt;ul&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+                </pre>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Ordered HTML List</h3>
+                <p>Defines an ordered list where list items are marked with numbers by default.</p>
+                <pre>
+&lt;ol&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+                </pre>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </div>
+        </div>
+<!--End of HTML Lists-->
+
+<!--Start of Description Lists-->
+        <h1 style="color: #37020f;">HTML Description Lists</h1>
+        <h4 style="color: #37020f;"><i>Defines a description list of terms with their corresponding descriptions.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>The List Structure</h3>
+                <pre>
+&lt;dl&gt;
+&lt;dt&gt;Coffee&lt;/dt&gt;
+&lt;dd&gt;- black hot drink&lt;/dd&gt;
+&lt;dt&gt;Milk&lt;/dt&gt;
+&lt;dd&gt;- white cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Browser Output</h3>
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>- white cold drink</dd>
+                </dl>
+            </div>
+        </div>
+<!--End of Description Lists-->
+
+<!--Start of HTML List Tags-->
+        <h1 style="color: #37020f;">HTML List Tags</h1>
+        <h4 style="color: #37020f;"><i>A quick reference guide to unordered, ordered, and description list elements in HTML.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Standard Lists</h3>
+                <ul>
+                    <li><b>&lt;ul&gt;</b> Defines an unordered (bulleted) list.</li>
+                    <li><b>&lt;ol&gt;</b> Defines an ordered (numbered) list.</li>
+                    <li><b>&lt;li&gt;</b> Defines a list item within a list.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Key-Value Pairs</h3>
+                <ul>
+                    <li><b>&lt;dl&gt;</b> Defines a complete description list.</li>
+                    <li><b>&lt;dt&gt;</b> Defines a term within the description list.</li>
+                    <li><b>&lt;dd&gt;</b> Provides the description for the term.</li>
+                </ul>
+            </div>
+        </div>
+<!--End of HTML List Tags-->
+
+<!--Start of HTML Tables-->
+        <h1 style="color: #37020f;">HTML Tables</h1>
+        <h4 style="color: #37020f;"><i>HTML tables allow web developers to arrange data into rows and columns.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Table Structure</h3>
+                <ul>
+                    <li><b>&lt;table&gt;</b> The wrapper element that defines the entire table.</li>
+                    <li><b>&lt;tr&gt;</b> Defines a table row container for cells.</li>
+                    <li><b>&lt;th&gt;</b> Defines a header cell, bold and centered by default.</li>
+                    <li><b>&lt;td&gt;</b> Defines a standard table data cell.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>HTML Source Code</h3>
+                <pre>
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Company&lt;/th&gt;
+&lt;th&gt;Contact&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+&lt;td&gt;Maria Anders&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </div>
+        </div>
+<!--End of HTML Tables-->
+
+<!--Start of Define an HTML Table-->
+        <h1 style="color: #37020f;">Define an HTML Table</h1>
+        <h4 style="color: #37020f;"><i>A table in HTML consists of table cells organized inside systematic rows and columns.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Table Components</h3>
+                <ul>
+                    <li><b>&lt;table&gt;</b> The primary wrapper container element.</li>
+                    <li><b>&lt;tr&gt;</b> Defines a table row containing individual cells.</li>
+                    <li><b>&lt;th&gt;</b> Defines bold and centered header cells.</li>
+                    <li><b>&lt;td&gt;</b> Defines standard data cells.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>HTML Implementation</h3>
+                <pre>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;th&gt;Company&lt;/th&gt;
+&lt;th&gt;Contact&lt;/th&gt;
+&lt;th&gt;Country&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+&lt;td&gt;Maria Anders&lt;/td&gt;
+&lt;td&gt;Germany&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+&lt;td&gt;Francisco Chang&lt;/td&gt;
+&lt;td&gt;Mexico&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Rendered Output Preview</h3>
+                <table border="1" style="border-collapse:collapse;">
+                    <tr>
+                        <th style="padding:8px;">Company</th>
+                        <th style="padding:8px;">Contact</th>
+                        <th style="padding:8px;">Country</th>
+                    </tr>
+                    <tr>
+                        <td style="padding:8px;">Alfreds Futterkiste</td>
+                        <td style="padding:8px;">Maria Anders</td>
+                        <td style="padding:8px;">Germany</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:8px;">Centro comercial Moctezuma</td>
+                        <td style="padding:8px;">Francisco Chang</td>
+                        <td style="padding:8px;">Mexico</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+<!--End of Define an HTML Table-->
+
+<!--Start of Table Cells-->
+        <h1 style="color: #37020f;">Table Cells</h1>
+        <h4 style="color: #37020f;"><i>HTML table cells are defined using the &lt;td&gt; element to house and structure diverse data types.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Cell Definition & Rules</h3>
+                <ul>
+                    <li style="color:aquamarine">The &lt;td&gt; Element:</li>Each table cell is defined by an opening &lt;td&gt; and closing &lt;/td&gt; tag.
+                    <li style="color:aquamarine">Meaning:</li>td stands for Table Data, which holds the actual content.
+                    <li style="color:aquamarine">Content:</li>Everything between the tags is treated as cell content.
+                </ul>
+                <p>A table cell can contain text, images, lists, links, or even nested tables.</p>
+            </div>
+            <div class="card">
+                <h3>Implementation & Preview</h3>
+                <pre>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;td&gt;Emil&lt;/td&gt;
+&lt;td&gt;Tobias&lt;/td&gt;
+&lt;td&gt;Linus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+                <table border="1">
+                    <tr>
+                        <td>Emil</td>
+                        <td>Tobias</td>
+                        <td>Linus</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+<!--End of Table Cells-->
+
+<!--Start of Table Rows-->
+        <h1 style="color: #37020f;">Table Rows</h1>
+        <h4 style="color: #37020f;"><i>HTML table rows are defined using the &lt;tr&gt; element to group and structure cell data horizontally.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Row Definition & Rules</h3>
+                <ul>
+                    <li style="color:aquamarine">The &lt;tr&gt; Element:</li>Each table row starts with an opening &lt;tr&gt; and ends with a &lt;/tr&gt; tag.
+                    <li style="color:aquamarine">Meaning:</li>tr stands for Table Row.
+                    <li style="color:aquamarine">Rows:</li>You can have as many rows as you like; just ensure the number of cells is consistent.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Implementation & Preview</h3>
+                <pre>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;td&gt;Emil&lt;/td&gt;
+&lt;td&gt;Tobias&lt;/td&gt;
+&lt;td&gt;Linus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+                <table border="1">
+                    <tr><td>Emil</td><td>Tobias</td><td>Linus</td></tr>
+                    <tr><td>16</td><td>14</td><td>10</td></tr>
+                </table>
+            </div>
+        </div>
+<!--End of Table Rows-->
+
+<!--Start of Table Headers-->
+        <h1 style="color: #37020f;">Table Headers</h1>
+        <h4 style="color: #37020f;"><i>Use the &lt;th&gt; tag instead of the &lt;td&gt; tag to define table header cells with bold and centered text by default.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Header Definition & Rules</h3>
+                <ul>
+                    <li style="color:aquamarine">The &lt;th&gt; Element:</li>Each header cell is defined by an opening &lt;th&gt; and closing &lt;/th&gt; tag.
+                    <li style="color:aquamarine">Meaning:</li>th stands for Table Header.
+                    <li style="color:aquamarine">Default Style:</li>Browsers display text in header cells as bold and centered.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Implementation & Preview</h3>
+                <pre>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;th&gt;Person 1&lt;/th&gt;
+&lt;th&gt;Person 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Emil&lt;/td&gt;
+&lt;td&gt;Tobias&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+                <table border="1">
+                    <tr><th>Person 1</th><th>Person 2</th></tr>
+                    <tr><td>Emil</td><td>Tobias</td></tr>
+                </table>
+            </div>
+        </div>
+<!--End of Table Headers-->
+
+<!--Start of HTML Images-->
+        <h1 style="color: #37020f;">HTML Images</h1>
+        <h4 style="color: #37020f;"><i>Embedding visual media, defining alternative descriptions, and setting dimensions.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Syntax & Structure</h3>
+                <p>The &lt;img&gt; element is used to embed an image in a web page.</p>
+                <ul>
+                    <li><b>src</b> specifies the path or URL to the image file.</li>
+                    <li><b>alt</b> specifies alternate text for screen readers or broken links.</li>
+                    <li>The &lt;img&gt; element is empty and has no closing tag.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>HTML Source Code</h3>
+                <pre>&lt;img src="pic_trulli.jpg" alt="Italian Trulli"&gt;</pre>
+            </div>
+        </div>
+<!--End of HTML Images-->
+
+<!--Start of The src Attribute-->
+        <h1 style="color: #37020f;">The src Attribute</h1>
+        <h4 style="color: #37020f;"><i>Understanding how web browsers resolve, fetch, and display image paths dynamically.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Attribute Role</h3>
+                <ul>
+                    <li style="color:aquamarine">Path Resolution:</li>The required src attribute specifies the precise URL or directory path to the target image resource.
+                    <li style="color:aquamarine">Page Loading:</li>When a page loads, the browser gets the image from the server and inserts it into the viewport.
+                    <li style="color:aquamarine">File Location:</li>Keep image files in consistent locations to prevent broken link icons from displaying alongside the alt text.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Example Implementation</h3>
+                <pre>&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;</pre>
+            </div>
+        </div>
+<!--End of The src Attribute-->
+
+<!--Start of The alt Attribute-->
+        <h1 style="color: #37020f;">The alt Attribute</h1>
+        <h4 style="color: #37020f;"><i>Ensure accessibility and graceful degradation when images fail to render.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Attribute Purpose</h3>
+                <ul>
+                    <li style="color:aquamarine">Fallback Text:</li>The required alt attribute provides fallback text when an image cannot be viewed.
+                    <li style="color:aquamarine">Accessibility:</li>Essential for users with slow connections, broken image sources, or assistive technologies.
+                    <li style="color:aquamarine">Description:</li>The value should descriptively and accurately convey the image content.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Syntax</h3>
+                <pre>&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;</pre>
+            </div>
+        </div>
+<!--End of The alt Attribute-->
+
+<!--Start of Image Size-->
+        <h1 style="color: #37020f;">Image Size - Width and Height</h1>
+        <h4 style="color: #37020f;"><i>Learn how to specify image dimensions using styles or attributes to prevent layout shifts.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Sizing Methods</h3>
+                <ul>
+                    <li>The style attribute defines inline CSS dimensions.</li>
+                    <li>Alternatively, native width and height attributes define size in pixels.</li>
+                    <li><b>Best Practice:</b> Always specify size. Without it, pages may flicker or shift layouts while images load.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Syntax Examples</h3>
+                <pre>
+&lt;img src="img_girl.jpg"
+style="width:500px;height:600px;"&gt;
+
+&lt;img src="img_girl.jpg"
+width="500" height="600"&gt;
+                </pre>
+            </div>
+        </div>
+<!--End of Image Size-->
+
+<!--Start of HTML Forms-->
+        <h1 style="color: #37020f;">HTML Forms</h1>
+        <h4 style="color: #37020f;"><i>An HTML form is used to collect user input, which is most often sent to a server for processing.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Form Syntax</h3>
+                <pre>
+&lt;form action="/action_page.php"&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Rendered Form Output</h3>
+                <form>
+                    <label for="fname_demo">First name:</label><br>
+                    <input type="text" id="fname_demo" value="John"><br>
+                    <label for="lname_demo">Last name:</label><br>
+                    <input type="text" id="lname_demo" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+<!--End of HTML Forms-->
+
+<!--Start of The form Element-->
+        <h1 style="color: #37020f;">The < form > Element</h1>
+        <h4 style="color: #37020f;"><i>The primary container used to structure and gather user inputs.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Input Container</h3>
+                <p>The &lt;form&gt; element is a dedicated container designed to house and coordinate multiple user input components.</p>
+                <ul>
+                    <li>Text Fields & Areas for descriptive text input</li>
+                    <li>Checkboxes & Radios for selection options</li>
+                    <li>Submit Buttons to process and dispatch data</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Basic Syntax</h3>
+                <pre>
+&lt;form&gt;
+...
+form elements
+...
+&lt;/form&gt;
+                </pre>
+            </div>
+        </div>
+<!--End of The form Element-->
+
+<!--Start of The input Element-->
+        <h1 style="color: #37020f;">The < input > Element</h1>
+        <h4 style="color: #37020f;"><i>The most versatile and frequently used component within HTML forms.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Dynamic & Adaptable</h3>
+                <p>An &lt;input&gt; element can be displayed in many ways, depending on the value of its type attribute.</p>
+            </div>
+            <div class="card">
+                <h3>Common Type Attributes</h3>
+                <ul>
+                    <li><b>type="text"</b> Displays a single-line text input field.</li>
+                    <li><b>type="radio"</b> Displays a radio button for selecting one option.</li>
+                    <li><b>type="checkbox"</b> Displays a checkbox for multiple choices.</li>
+                    <li><b>type="submit"</b> Displays a button to submit form data to a server.</li>
+                </ul>
+            </div>
+        </div>
+<!--End of The input Element-->
+
+<!--Start of Text Fields-->
+        <h1 style="color: #37020f;">Text Fields</h1>
+        <h4 style="color: #37020f;"><i>The &lt;input type="text"&gt; defines a single-line input field for user text input.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Form Syntax</h3>
+                <pre>
+&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"&gt;
+&lt;/form&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Browser Output</h3>
+                <label for="fname2">First name:</label><br>
+                <input type="text" id="fname2" name="fname2"><br>
+                <label for="lname2">Last name:</label><br>
+                <input type="text" id="lname2" name="lname2">
+                <p><b>Note:</b> The form container itself is completely invisible. The default width of an input field is 20 characters.</p>
+            </div>
+        </div>
+<!--End of Text Fields-->
+
+<!--Start of The label Element-->
+        <h1 style="color: #37020f;">The < label > Element</h1>
+        <h4 style="color: #37020f;"><i>Enhancing web accessibility, user experience, and semantic form connections.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Screen Readers</h3>
+                <p>A screen-reader will read the label out loud when a user focuses on the input element, making forms highly accessible.</p>
+            </div>
+            <div class="card">
+                <h3>Explicit Binding</h3>
+                <p>The <b>for</b> attribute of the label must match the <b>id</b> of the target input element to bind them together.</p>
+            </div>
+        </div>
+<!--End of The label Element-->
+
+<!--Start of Radio Buttons-->
+        <h1 style="color: #37020f;">Radio Buttons</h1>
+        <h4 style="color: #37020f;"><i>The &lt;input type="radio"&gt; defines a radio button, allowing selection of ONE option from a set.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Source</h3>
+                <pre>
+&lt;p&gt;Choose your favorite Web language:&lt;/p&gt;
+
+&lt;input type="radio" id="html"
+name="fav_language" value="HTML"&gt;
+&lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;
+
+&lt;input type="radio" id="css"
+name="fav_language" value="CSS"&gt;
+&lt;label for="css"&gt;CSS&lt;/label&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Browser Output</h3>
+                <p>Choose your favorite Web language:</p>
+                <input type="radio" id="html_radio" name="fav_language_demo" value="HTML">
+                <label for="html_radio">HTML</label><br>
+                <input type="radio" id="css_radio" name="fav_language_demo" value="CSS">
+                <label for="css_radio">CSS</label>
+            </div>
+        </div>
+<!--End of Radio Buttons-->
+
+<!--Start of Checkboxes-->
+        <h1 style="color: #37020f;">Checkboxes</h1>
+        <h4 style="color: #37020f;"><i>The &lt;input type="checkbox"&gt; defines a checkbox, allowing selection of multiple options.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Source</h3>
+                <pre>
+&lt;input type="checkbox" id="vehicle1"
+name="vehicle1" value="Bike"&gt;
+&lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Browser Output</h3>
+                <input type="checkbox" id="vehicle1_demo" name="vehicle1_demo" value="Bike">
+                <label for="vehicle1_demo"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2_demo" name="vehicle2_demo" value="Car">
+                <label for="vehicle2_demo"> I have a car</label>
+            </div>
+        </div>
+<!--End of Checkboxes-->
+
+<!--Start of Submit Button-->
+        <h1 style="color: #37020f;">Submit Button</h1>
+        <h4 style="color: #37020f;"><i>The &lt;input type="submit"&gt; defines a button for submitting the form data.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Source</h3>
+                <pre>&lt;input type="submit" value="Submit"&gt;</pre>
+            </div>
+            <div class="card">
+                <h3>Browser Output</h3>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        <!--Start of HTML5 Semantic Elements-->
+        <h1 style="color: #37020f;">HTML5 Semantic Elements</h1>
+        <h4 style="color: #37020f;"><i>Essential semantic elements for structuring modern, accessible web layouts.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Layout Semantic Tags</h3>
+                <ul>
+                    <li><b>&lt;header&gt;</b> Defines the introduction and bottom metadata of the page or section.</li>
+                    <li><b>&lt;nav&gt;</b> Declares a block of navigation links for website traversal.</li>
+                    <li><b>&lt;main&gt;</b> Identifies the primary content of the document.</li>
+                    <li><b>&lt;footer&gt;</b> Defines the page bottom section.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Content & Sections</h3>
+                <ul>
+                    <li><b>&lt;section&gt;</b> A thematic grouping of content, typically starting with its own heading.</li>
+                    <li><b>&lt;article&gt;</b> Represents independent, self-contained content.</li>
+                    <li><b>&lt;aside&gt;</b> Contains content indirectly related to the main content, often as a sidebar.</li>
+                </ul>
+            </div>
+        </div>
+<!--End of HTML5 Semantic Elements-->
+
+<!--Start of Semantic HTML Benefits-->
+        <h1 style="color: #37020f;">Semantic HTML - Key Benefits</h1>
+        <div class="cards">
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Helps search engines and crawlers index and understand page layout and content structure efficiently.</p>
+            </div>
+            <div class="card">
+                <h3>Accessibility</h3>
+                <p>Enables screen readers to easily navigate and translate the structure for visually impaired users.</p>
+            </div>
+            <div class="card">
+                <h3>Code Readability</h3>
+                <p>Improves the developer experience with clean, intuitive, and highly organized source code structure.</p>
+            </div>
+        </div>
+<!--End of Semantic HTML Benefits-->
+        <hr>
+       <div class="card"> <a href="Unit 2.html">Back</a></div>
+<!--End of Submit Button-->
+    </body>
+</html>
+</>

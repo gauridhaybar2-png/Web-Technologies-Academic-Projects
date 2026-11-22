@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Basics of HTML</title>
+        <style>
+            .card{
+                background: rgb(1, 1, 56);
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: rgb(241, 234, 234);
+                box-shadow: 0 0 15px rgb(22, 30, 66);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(8, 15, 36);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+ <!--Main body starts here-->
+    <body bgcolor="ACDDDE">
+            <h1>Introduction to Server-Side Scripting</h1>
+            <hr>
+            <div class="cards">
+                <div class="card">
+                    <p>A server-side script runs on a web server, not in the visitor's browser. The server can
+                        process a request, read or update data, apply application rules, and send back a
+                        response such as HTML or JSON. PHP (originally “Personal Home Page,” now commonly
+                        expanded as “PHP: Hypertext Preprocessor”) is an open-source scripting language
+                        widely used for web development. PHP code can be embedded in HTML and is
+                        executed by a PHP runtime on the server.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Browser / client</h3>
+                    <p>Sends an HTTP request, such as asking for a
+                        page or submitting a form. It receives the
+                        response and renders HTML, CSS, and
+                        JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h3>Web server + PHP</h3>
+                    <p>Routes the request to PHP, executes the script,
+                        and constructs a response. The PHP source is
+                        not sent to the browser.</p>
+                </div>
+                <div class="card">
+                    <h3>Data store</h3>
+                    <p>A server-side application may read or write a
+                        database or files, subject to authorization and
+                        validation rules.</p>
+                </div>
+            </div>
+            <h3>Request and response flow</h3>
+            <div class="cards">
+                <div class="card">
+                    <p>
+                        1. A browser requests a PHP route, for example http://localhost:8000/hello.php .
+                        <br>2. The web server passes the request to the PHP interpreter.
+                        <br>3. The script runs on the server and may combine data with an HTML template.
+                        <br>4. The server sends the generated response to the browser; the browser displays the result.
+                    </p>
+                </div>
+            </div>
+            <h3>First server-side script</h3>
+            <div class="cards">
+                <div class="card">
+                    <p>Save this as hello.php . From the same directory, start PHP's local development server with php -S
+                    localhost:8000 , then visit http  : / /localhost: 8000/hello. php . The command-line alternative is
+                    php hello.php , which prints the generated HTML in the terminal. The opening tag < ?php starts PHP code. The short echo tag <?= ... ?> outputs a value. The browser
+                    receives the resulting HTML—not the PHP statements that created it. htmlspecialchars() encodes text
+                    for safe insertion into HTML.</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 115930.png" height="300" width="500">
+                </div>
+            </div>
+        <hr>
+        <div class="card"><a href="Unit 6.html">Back</a></div>
+</body>
+</html>
+</>

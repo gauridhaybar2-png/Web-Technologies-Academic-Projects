@@ -1,0 +1,318 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Color and Hyperlinks
+        </title>
+         <style>
+            .card{
+                background:#01391A;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #01391A;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #01391A;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+        <h1>Color and Hyperlinks</h1>
+        <h4><i>An essential guide to text coloring and anchor elements in HTML</i></h4>
+        <hr>
+        <!--Start of HTML Colors-->
+        <h1 style="color: #022813;">HTML Colors</h1>
+        <h4 style="color: #022813;"><i>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Color Names</h3>
+                <ul>
+                    <li>In HTML, a color can be specified by using a color name.</li>
+                    <li>HTML supports 140 standard color names.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Color Values</h3>
+                <pre>
+Color Name: Tomato
+RGB: rgb(255, 99, 71)
+HEX: #ff6347
+HSL: hsl(9, 100%, 64%)
+RGBA: rgba(255, 99, 71, 0.5)
+HSLA: hsla(9, 100%, 64%, 0.5)
+                </pre>
+            </div>
+        </div>
+<!--End of HTML Colors-->
+
+<!--Start of Background Color-->
+        <h1 style="color: #022813;">Background Color</h1>
+        <h4 style="color: #022813;"><i>You can set the background color for HTML elements using the style attribute.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Code Example</h3>
+                <pre>
+&lt;h1 style="background-color:DodgerBlue;"&gt;
+Hello World
+&lt;/h1&gt;
+&lt;p style="background-color:Tomato;"&gt;
+Lorem ipsum dolor sit...
+&lt;/p&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Rendered Output Preview</h3>
+                <h1 style="background-color:DodgerBlue;">Hello World</h1>
+                <p style="background-color:Tomato;">Lorem ipsum dolor sit...</p>
+            </div>
+        </div>
+<!--End of Background Color-->
+
+<!--Start of Text Color-->
+        <h1 style="color: #022813;">Text Color</h1>
+        <h4 style="color: #022813;"><i>You can set the color of text in HTML using the style attribute with color values.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Code Example</h3>
+                <pre>
+&lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;
+&lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;
+&lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Rendered Output Preview</h3>
+                <h1 style="color:Tomato;">Hello World</h1>
+                <p style="color:DodgerBlue;">Lorem ipsum...</p>
+                <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+            </div>
+        </div>
+<!--End of Text Color-->
+
+<!--Start of Border Color-->
+        <h1 style="color: #022813;">Border Color</h1>
+        <h4 style="color: #022813;"><i>You can set the color of borders in HTML using the style attribute with color values.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Code Example</h3>
+                <pre>
+&lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;
+&lt;h1 style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+&lt;h1 style="border:2px solid Violet;"&gt;Hello World&lt;/h1&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Rendered Output Preview</h3>
+                <h1 style="border:2px solid Tomato;">Hello World</h1>
+                <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+                <h1 style="border:2px solid Violet;">Hello World</h1>
+            </div>
+        </div>
+<!--End of Border Color-->
+
+<!--Start of Color Values-->
+        <h1 style="color: #022813;">HTML Color Values</h1>
+        <h4 style="color: #022813;"><i>Using RGB, HEX, HSL, RGBA, and HSLA values to specify HTML colors.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Standard Color Values</h3>
+                <ul>
+                    <li style="color:aquamarine">RGB:</li>Defines a color using red, green, and blue values.
+                    <li style="color:aquamarine">HEX:</li>Defines a color using a hexadecimal color code.
+                    <li style="color:aquamarine">HSL:</li>Defines a color using hue, saturation, and lightness.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Translucent Color Values</h3>
+                <ul>
+                    <li style="color:aquamarine">RGBA:</li>RGB with an alpha channel for opacity.
+                    <li style="color:aquamarine">HSLA:</li>HSL with an alpha channel for opacity.
+                </ul>
+                <pre>
+&lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
+                </pre>
+            </div>
+        </div>
+<!--End of Color Values-->
+
+<!--Start of HTML Links-->
+        <h1 style="color: #022813;">HTML Links</h1>
+        <h4 style="color: #022813;"><i>Defining hyperlinks to connect web pages and navigate to external resources.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Links - Syntax</h3>
+                <p>The HTML &lt;a&gt; tag defines a hyperlink.</p>
+                <pre>&lt;a href="url"&gt;link text&lt;/a&gt;</pre>
+                <ul>
+                    <li style="color:aquamarine">href Attribute:</li>Specifies the destination URL of the link.
+                    <li style="color:aquamarine">Link Text:</li>The visible content displayed on the page.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <pre>&lt;a href="https://itmbu.ac.in"&gt;Visit itmbu.ac.in!&lt;/a&gt;</pre>
+                <a href="https://itmbu.ac.in">Visit itmbu.ac.in!</a>
+            </div>
+        </div>
+<!--End of HTML Links-->
+
+<!--Start of HTML target Attribute-->
+        <h1 style="color: #022813;">HTML Links - The target Attribute</h1>
+        <h4 style="color: #022813;"><i>The target attribute specifies where to open the linked document.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Target Values</h3>
+                <ul>
+                    <li style="color:aquamarine">_self:</li>Default. Opens the document in the same window or tab.
+                    <li style="color:aquamarine">_blank:</li>Opens the document in a new window or browser tab.
+                    <li style="color:aquamarine">_parent:</li>Opens the document within the parent frame.
+                    <li style="color:aquamarine">_top:</li>Opens the document in the full body window.
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Code Example</h3>
+                <pre>
+&lt;a href="https://itmbu.ac.in/"
+target="_blank"&gt;
+Visit itmbu.ac.in!
+&lt;/a&gt;
+                </pre>
+                <a href="https://itmbu.ac.in/" target="_blank">Visit itmbu.ac.in!</a>
+            </div>
+        </div>
+<!--End of HTML target Attribute-->
+
+<!--Start of Absolute and Relative URLs-->
+        <h1 style="color: #022813;">Absolute URLs vs. Relative URLs</h1>
+        <h4 style="color: #022813;"><i>Understanding how destination paths are defined in HTML anchor tags.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Absolute URLs</h3>
+                <p>Uses a complete web address, including the protocol, to point to an external site or resource.</p>
+                <pre>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</pre>
+                <h3>Relative URLs</h3>
+                <p>Points to a page or folder within the current website, omitting the protocol and domain parts.</p>
+                <pre>&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;</pre>
+            </div>
+            <div class="card">
+                <h3>Examples</h3>
+                <p>Absolute URLs</p>
+                <p><a href="https://www.w3.org/">W3C</a></p>
+                <p><a href="https://google.com/">Google</a></p>
+                <p>Relative URLs</p>
+                <p><a href="html_images.asp">HTML Images</a></p>
+                <p><a href="/css/default.asp">CSS Tutorial</a></p>
+            </div>
+        </div>
+<!--End of Absolute and Relative URLs-->
+
+<!--Start of Image as a Link-->
+        <h1 style="color: #022813;">HTML Links - Use an Image as a Link</h1>
+        <h4 style="color: #022813;"><i>Combining anchor tags and image elements to build visual, clickable hyperlinks.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Structure</h3>
+                <p>To use an image as a link, simply place the &lt;img&gt; tag inside the &lt;a&gt; tag.</p>
+                <pre>
+&lt;a href="default.asp"&gt;
+&lt;img src="smiley.gif"
+alt="HTML tutorial"
+style="width:42px;height:42px;"&gt;
+&lt;/a&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Clickable Image</h3>
+                <a href="default.asp">
+                    <img src="https://www.w3schools.com/html/smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+                </a>
+            </div>
+        </div>
+<!--End of Image as a Link-->
+
+<!--Start of Email Link-->
+        <h1 style="color: #022813;">Link to an Email Address</h1>
+        <h4 style="color: #022813;"><i>Using mailto: inside the href attribute to create an email link.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Source Code</h3>
+                <pre>
+&lt;a href="mailto:someone@example.com"&gt;
+Send email
+&lt;/a&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Rendered Output</h3>
+                <a href="mailto:someone@example.com">Send email</a>
+            </div>
+        </div>
+<!--End of Email Link-->
+
+<!--Start of Button as a Link-->
+        <h1 style="color: #022813;">Button as a Link</h1>
+        <h4 style="color: #022813;"><i>Using JavaScript with a button to navigate to another document.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML Source Code</h3>
+                <pre>
+&lt;button onclick="
+document.location='default.asp'
+"&gt;
+HTML Tutorial
+&lt;/button&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Rendered Output</h3>
+                <button onclick="document.location='default.asp'">HTML Tutorial</button>
+            </div>
+        </div>
+<!--End of Button as a Link-->
+
+<!--Start of Link Titles-->
+        <h1 style="color: #022813;">Link Titles</h1>
+        <h4 style="color: #022813;"><i>The title attribute specifies extra information about an element, most often shown as a tooltip on hover.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Code Example</h3>
+                <pre>
+&lt;a href="html_tutorial.asp"
+title="Go to W3Schools"&gt;
+Visit our HTML Tutorial
+&lt;/a&gt;
+                </pre>
+            </div>
+            <div class="card">
+                <h3>Rendered Output</h3>
+                <a href="html_tutorial.asp" title="Go to W3Schools">Visit our HTML Tutorial</a>
+            </div>
+        </div>
+<!--End of Link Titles-->
+<hr>
+<div class="card"><a href="Unit 2.html">Back</a></div>
+    </body>
+</html>
+</>

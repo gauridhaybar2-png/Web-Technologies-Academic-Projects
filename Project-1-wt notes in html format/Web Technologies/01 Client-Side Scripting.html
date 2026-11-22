@@ -1,0 +1,209 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Basics of HTML</title>
+        <style>
+            .card{
+                background: rgb(1, 1, 56);
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: rgb(241, 234, 234);
+                box-shadow: 0 0 15px rgb(22, 30, 66);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(8, 15, 36);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+ <!--Main body starts here-->
+    <body bgcolor="ACDDDE">
+        <h1>Client-Side Scripting with JavaScript</h1>
+       <hr>
+        <div class="cards">
+            <div class="card">
+               <p>JavaScript runs in the browser and responds to user actions. It can
+                    calculate values, choose what happens next, and update the current page
+                    without rebuilding its HTML by hand. In a web application, JavaScript is
+                    what turns a static page into an interactive interface: it validates entries,
+                    changes text, reveals tabs, adds animations, and fetches new data from a
+                    server.</p> 
+            </div>
+            <div class="card">
+              <p>According to the MDN JavaScript introduction, JavaScript is a high-level, dynamic
+                scripting language that can be used to control the behavior of a web page. It is
+                not the same as HTML or CSS: HTML gives structure, CSS gives presentation, and
+                JavaScript gives behavior. It is one of the core technologies of the web and is run
+                by every modern browser.</p>  
+            </div>
+            <div class="card">
+                <p>At the core of JavaScript are a few fundamental ideas. Variables store
+                information, conditions let the program make decisions, loops repeat tasks, and
+                functions package reusable logic. These concepts are the building blocks of every
+                event-driven interaction in web development. For example, a course portal may
+                use a variable to hold the selected unit, an if statement to decide which
+                JavaScript basics Objects and DOM Forms and validation DHTML
+                Events and buttons AJAX jQuery
+                content to display, and a function to update the page when a student clicks a
+                button.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <h3>Variables and values</h3>
+                <p>Use const for bindings that will
+                not be reassigned and let when
+                reassignment is needed. Values
+                can be strings, numbers,
+                booleans, arrays, objects, or
+                null .</p>
+            </div>
+            <div class="card">
+                <h3>Conditions</h3>
+                <p>if , else if , and else
+                    choose a branch based on a true-
+                    or-false expression. They are used
+                    for testing validity, checking
+                    selections, and controlling the flow
+                    of a program.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Loops</h3>
+                <p>for and while repeat work.
+                    Use for...of to visit each value
+                    in an iterable such as an array,
+                    which is common when printing
+                    lists, updating scores, or reading
+                    data.</p>
+            </div>
+            <div class="card">
+                <h3>Functions</h3>
+                <p>Functions package reusable
+                    instructions. They can receive
+                    parameters and return a result,
+                    reducing repetition and making
+                    code easier to read and maintain.</p>
+            </div>
+        </div>
+        <h3>JavaScript Data Types</h3>
+        <div class="cards">
+            <div class="card">
+                <p>A data type describes the kind of value a variable contains and the operations
+                    that make sense for it. JavaScript is dynamically typed: a variable can hold values
+                    of different types at different times, and you do not write a type declaration when
+                    creating it. Use typeof to inspect many values while learning or debugging.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 174636.png" height="300" width="500">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 174705.png" height="300" width="500">
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 174822.png" height="300" width="500">
+            </div>
+        </div>
+        <hr>
+        <h3>More Coding Examples</h3>
+        <h4>1.Variables</h4>
+        <div class="cards">
+            <div class="card">
+              <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 175052.png" height="300" width="500">  
+            </div>
+            <div class="card">
+                <p>A variable stores data so the program can use it later. const is used when the
+                    value should not change, while let is used when the value may be updated
+                    during execution.</p>
+             </div>
+        </div>
+        <h4>2.Conditions and Logic</h4>
+        <div class="cards">
+            <div class="card">
+              <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 175303.png" height="300" width="500">  
+            </div>
+            <div class="card">
+                <p>Conditions help decide what action the program should take. Logical operators
+                    such as && (AND), || (OR), and ! (NOT) combine multiple checks into one
+                    decision.</p>
+                                </div>
+        </div>
+         <h4>3.Loops and Logic</h4>
+        <div class="cards">
+            <div class="card">
+              <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 175303.png" height="300" width="500">  
+            </div>
+            <div class="card">
+                <p>Loops repeat a block of instructions until a condition is met. They are useful when
+                    processing lists, printing results, or checking multiple items one by one..</p>
+                                </div>
+        </div>
+         <h4>4.Functions</h4>
+        <div class="cards">
+            <div class="card">
+              <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 175620.png" height="300" width="500">  
+            </div>
+            <div class="card">
+                <p>Functions are reusable blocks of code. They make programs easier to manage
+                    because a task can be written once and used many times instead of repeating the
+                    same code in different places.</p>
+                                </div>
+        </div>
+         <h4>5.Popup Boxes</h4>
+        <div class="cards">
+            <div class="card">
+              <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 175822.png" height="300" width="500">  
+            </div>
+            <div class="card">
+                <p>Popup boxes are used for simple interaction and testing. alert() shows a
+                    message, confirm() asks for a yes/no answer, and prompt() receives a short
+                    text input from the user.</p>
+                                </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 180039.png" height="300" width="500">
+            </div>
+        </div>
+        <h3>Popup Boxes</h3>
+        <div class="cards">
+            <div class="card">
+                <p>Browsers provide alert() for a message, confirm() for a yes/no decision,
+                    and prompt() for a short text response. They are useful for simple
+                    demonstrations, but custom page UI is usually less disruptive in real applications.
+                    The main reason to learn them is to understand how JavaScript interacts with
+                    browser windows and user decisions; in production, developers usually create
+                    their own styled interface elements instead of relying on native dialogs.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 180219.png" height="300" width="500">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 180356.png" height="300" width="500">
+            </div>
+        </div>
+        <hr>
+        <div class="card"><a href="Unit 4.html">Back</a></div>
+</body>
+</html>
+</>

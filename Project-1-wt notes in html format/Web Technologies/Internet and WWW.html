@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Formatting and Fonts
+             </title>
+             <style>
+            .card{
+                background:#352018;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #FFC7C7;
+                 box-shadow: 0 0 25px rgb(34, 10, 10);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(34, 10, 10);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+       
+    </head>
+    <body bgcolor="#FFC7C7">
+           <h1>Internet and WWW</h1>
+           <hr>
+           <div class="cards">
+            <div class="card">
+                <p>The Internet is the global network of interconnected networks: hardware, links, routers, addressing, and
+                    protocols that move data between devices. The Web is one service that uses this network. Email, online
+                    games, file transfer, and voice calls can also use the Internet without being Web pages.</p>
+            </div>
+           </div> 
+           <div class="cards">
+            <div class="card">
+                <h3>Internet: the infrastructure</h3>
+                <p>IP addressing and routing deliver packets
+                between networks. Transport protocols such as
+                TCP or QUIC carry application traffic across
+                connections.</p>
+            </div>
+            <div class="card">
+                <h3>Web: an application on it</h3>
+                <p>Browsers use URLs, HTTP, HTML, and related
+                technologies to request and display linked
+                resources.</p>
+            </div>
+           </div>
+           <div class="cards">
+            <div class="card">
+                <p>Analogy: The Internet is the road system; the Web is one kind of journey made using those roads. The
+                    roads carry many other kinds of traffic too.</p>
+            </div>
+           </div>
+           <h2>From domain name to web page</h2>
+           <div class="cards">
+            <div class="card">
+                <p>
+                   1. The browser parses a URL and checks its cache and local configuration.
+                <br><br>2. DNS resolves the host name to an IP address.
+                <br><br>3. The browser establishes a connection to the server (and negotiates TLS for HTTPS).
+                <br><br>4. It sends an HTTP request; the server returns an HTTP response.
+                <br><br>5. The browser parses HTML, requests referenced resources, and renders the page. 
+                </p>
+            </div>
+           </div>
+        <hr>
+    <div class="card"><a href="Unit 1.html">Back</a></div>
+    </body>
+</html>
+</>

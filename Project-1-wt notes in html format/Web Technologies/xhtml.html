@@ -1,0 +1,162 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            XHTML:Meta Tags
+        </title>
+        <style>
+            .card{
+                background:#1d1836;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #1a1242;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #1a1242;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D5BEEB">
+          <!--Start of XHTML: Meta Tags-->
+
+<h1 style="color: #2f1308;">XHTML: Meta Tags</h1>
+<h4 style="color: #2f1308;"><i>An essential guide to document metadata, indexing, and character encoding in XHTML.</i></h4>
+<hr>
+
+<div class="cards">
+    <div class="card">
+        <h3>XHTML and Meta Tags</h3>
+
+        <p>
+            While HTML5 is forgiving (it doesn't crash if you forget to close a tag), XHTML is the strict, XML-based version of HTML.
+        </p>
+
+        <h3>Strict Standard</h3>
+
+        <p>
+            Unlike HTML5, XHTML does not tolerate syntax shortcuts. By enforcing XML conformance, it ensures your code remains consistent, clean, and easily parsed by automated tools and enterprise systems.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>The Core Rules of XHTML</h3>
+
+        <ul>
+            <li style="color:aquamarine">1. Strictly Lowercase Tags:</li>
+            All tags must be lowercase. Use &lt;body&gt;, never &lt;BODY&gt;.
+
+            <li style="color:aquamarine">2. Properly Closed Elements:</li>
+            Empty elements must include a closing slash: &lt;br /&gt; instead of &lt;br&gt;.
+
+            <li style="color:aquamarine">3. Perfect Nesting Hierarchy:</li>
+            Tags must be nested in precise order:
+            &lt;b&gt;&lt;i&gt;bold italic&lt;/i&gt;&lt;/b&gt;.
+        </ul>
+    </div>
+</div>
+
+<!--End of XHTML: Meta Tags-->
+
+
+<!--Start of Meta Tags-->
+
+<h1 style="color: #2f1308;">Meta Tags</h1>
+<h4 style="color: #2f1308;"><i>Provide essential metadata to browsers, search engines, and web services inside the &lt;head&gt; element.</i></h4>
+
+<div class="cards">
+    <div class="card">
+        <h3>Document Head</h3>
+
+        <h3>Invisible Metadata</h3>
+
+        <p>
+            Meta tags reside exclusively in the HTML header. While invisible to visitors, they communicate critical configuration, SEO, and viewport behavior to machines.
+        </p>
+
+        <p>HTML Source:</p>
+
+        <p>
+            &lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;meta ...&gt;<br>
+            &nbsp;&nbsp;&lt;title&gt;My Page&lt;/title&gt;<br>
+            &lt;/head&gt;
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Types of Meta Tags</h3>
+
+        <ul>
+            <li style="color:aquamarine">charset &lt;meta charset="UTF-8"&gt;</li>
+            Defines character encoding and ensures emojis and accents render correctly.
+
+            <li style="color:aquamarine">viewport &lt;meta name="viewport" content="..."&gt;</li>
+            Enables responsive web design by scaling pages for mobile screens.
+
+            <li style="color:aquamarine">description &lt;meta name="description" content="..."&gt;</li>
+            Provides page summary used directly by Google in search results.
+
+            <li style="color:aquamarine">author &lt;meta name="author" content="Your Name"&gt;</li>
+            Specifies the author of the document.
+
+            <li style="color:aquamarine">refresh &lt;meta http-equiv="refresh" content="30"&gt;</li>
+            Refreshes the page automatically every 30 seconds.
+        </ul>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <h3>INPUT</h3>
+
+        <p>HTML Source:</p>
+
+        <p>
+            < head ><br>
+            < meta charset="UTF-8" ><br>
+            < meta name="viewport" content="width=device-width, initial-scale=1.0" ><br>
+            < meta name="description" content="My Web Page" ><br>
+            < meta name="author" content="Your Name" ><br>
+            < meta http-equiv="refresh" content="30" ><br>
+            < title> My Page < /title ><br>
+            < /head >
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Rendered Output Preview:</h3>
+
+        <p>
+            Meta tags are not directly visible on the web page.
+        </p>
+
+        <p>
+            They provide information to browsers, search engines, and web services.
+        </p>
+    </div>
+</div>
+<hr>
+<div class="card"><a href="Unit 2.html">Back</a></div>
+
+<!--End of Meta Tags-->
+    </body>
+</html>
+</>

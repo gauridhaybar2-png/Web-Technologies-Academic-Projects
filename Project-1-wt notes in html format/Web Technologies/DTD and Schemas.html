@@ -1,0 +1,112 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Color and Hyperlinks
+        </title>
+         <style>
+            .card{
+                background:#01391A;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #01391A;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #01391A;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+            <h1>DTD and Schemas</h1>
+            <div class="cards">
+                <div class="card">
+                    <p>Well-formedness checks syntax, but it does not specify which elements a particular application expects. A
+                        grammar defines allowed elements, attributes, their order, and how often they may appear. XML processors
+                        can use that grammar to validate a document before the application consumes it.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>DTD (Document Type Definition)</h3>
+                    <p>A compact grammar that declares elements,
+                        attributes, entities, and content models. A DTD
+                        can be embedded in an XML document or
+                        stored as an external .dtd file. DTD syntax
+                        is not itself XML and has limited data typing.</p>
+                </div>
+                <div class="card">
+                    <h3>XML Schema (XSD)</h3>
+                    <p>An XML-based grammar that supports built-in
+                        types such as xs:decimal , constraints,
+                        namespaces, and reusable type definitions.
+                        XSD is more expressive and strongly typed
+                        than DTD.</p>
+                </div>
+            </div>
+            <h3>One catalog, described by a DTD</h3>
+            <div class="cards">
+                <div class="card">
+                    <p>Save the following as catalog.dtd . It requires one or more product elements, each with a name
+                followed by a price ; every product must have an id attribute.</p>
+                </div>
+                <div class="card">
+                    <p><!ELEMENT catalog (product+)>
+                        <br><!ELEMENT product (name, price)>
+                        <br><!ATTLIST product id ID #REQUIRED>
+
+                        <br><!ELEMENT name (#PCDATA)>
+                        <br><!ELEMENT price (#PCDATA)></p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <p>Save this matching instance as catalog.xml . The document type declaration connects it to the external
+                        DTD.</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 104054.png" height="300" width="500">
+                </div>
+            </div>
+            <h3>Describe the same structure with XML Schema</h3>
+            <div class="cards">
+                <div class="card">
+                    <p>Save the following as catalog.xsd . The schema requires a decimal price and a product ID, and enforces
+                        the order of child elements.</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 104310.png" height="300" width="500">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <p>For XSD validation, use this XML header instead of the DTD declaration above. Keep the catalog body the
+                        same.</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 104431.png" height="300" width="500"><hr>
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 104517.png" height="300" width="500">
+                </div>
+            </div>
+        <hr>
+<div class="card"><a href="Unit 5.html">Back</a></div>
+    </body>
+</html>
+</>

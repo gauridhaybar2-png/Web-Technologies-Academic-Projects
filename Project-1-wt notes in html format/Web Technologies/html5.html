@@ -1,0 +1,250 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            HTML5 Multimedia,etc.
+        </title>
+        <style>
+            .card{
+                background: #610020;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #f0d393;
+                box-shadow: 0 0 15px #3c0014;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #3c0014;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#fff8b6">
+        <h1 style="color:#3c0014 ;">HTML5:Drag/Drop,Video,Audio,Input types</h1>
+        <h4 style="color:#3c0014 ;"><i>An essential guide to native rich media,interactive drag-and-drop and advanced form inputs on HTML5</i></h4><br><hr>
+        <h1 style="color:#3c0014;">HTML5:Multimedia,Input Types and API's</h1>
+        <h4 style="color:#3c0014;"><i>Native support for rich media,eliminating the need for legacy browser plugins.</i></h4>
+        
+
+        <!--Start of HTML5: Multimedia, Input Types, and APIs-->
+
+
+
+<div class="cards">
+    <div class="card">
+        <h3>Native Benefits</h3>
+        <ul>
+            <li style="color:aquamarine">Standardized Playback:</li> HTML5 introduces first-class media elements that run natively inside browsers without external software.
+            <li style="color:aquamarine">No Third-Party Plugins:</li> Eliminates security risks and overhead associated with tools like Adobe Flash.
+            <li style="color:aquamarine">Direct Page Embedding:</li> Embed media assets directly into the markup for better performance and DOM control.
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Implementation</h3>
+        <p>The &lt;video&gt; Element</p>
+        <p>HTML Source:</p>
+        <p>
+            &lt;video width="600" controls autoplay loop muted&gt;<br>
+            &lt;source src="lecture.mp4" type="video/mp4"&gt;<br>
+            Your browser does not support the video tag.<br>
+            &lt;/video&gt;
+        </p>
+    </div>
+</div>
+
+<!--End of HTML5: Multimedia, Input Types, and APIs-->
+
+
+<!--Start of HTML5: Multimedia, Input Types, and APIs Contd.-->
+
+<h1 style="color: #3c0014;">HTML5: Multimedia, Input Types, and APIs (Contd.)</h1>
+<h4 style="color: #3c0014;"><i>The &lt;audio&gt; element brings native, plugin-free audio streaming directly to the web browser.</i></h4>
+
+<div class="cards">
+    <div class="card">
+        <h3>The &lt;audio&gt; Element</h3>
+        <p>HTML Source:</p>
+        <p>
+            &lt;audio controls&gt;<br>
+            &nbsp;&nbsp;&lt;source src="podcast.mp3" type="audio/mpeg"&gt;<br>
+            &lt;/audio&gt;
+        </p>
+
+        <p>Specify multiple sources using the nested source tag to support different audio formats like MP3, WAV, or OGG across various browsers.</p>
+    </div>
+
+    <div class="card">
+        <h3>Control & Behavior</h3>
+        <h3>Key Attributes</h3>
+        <ul>
+            <li style="color:aquamarine">controls:</li> Adds essential user play, pause, and volume controls to the interface.
+            <li style="color:aquamarine">autoplay:</li> Instructs the browser to start playing the audio file automatically.
+            <li style="color:aquamarine">loop:</li> Restarts the audio sequence automatically from the beginning when done.
+            <li style="color:aquamarine">muted:</li> Loads and begins playing the audio with the volume initially turned off.
+        </ul>
+    </div>
+</div>
+
+<!--End of HTML5: Multimedia, Input Types, and APIs Contd.-->
+
+
+<!--Start of New Form Input Types-->
+
+<h1 style="color: #3c0014;">New Form Input Types</h1>
+<h4 style="color: #3c0014;"><i>HTML5 forms introduce built-in validation and native mobile keyboards.</i></h4>
+
+<div class="cards">
+    <div class="card">
+        <h3>Smarter Forms</h3>
+        <p>HTML5 made forms much smarter. Browsers now provide built-in validation and specialized mobile keyboards without needing complex JavaScript.</p>
+    </div>
+
+    <div class="card">
+        <h3>Native Browser Power</h3>
+        <ul>
+            <li style="color:aquamarine">email &lt;input type="email"&gt;</li>
+            <li>Validates that the input contains an @ symbol.</li>
+
+            <li style="color:aquamarine">date &lt;input type="date"&gt;</li>
+            <li>Opens a native pop-up calendar to pick a date.</li>
+
+            <li style="color:aquamarine">color &lt;input type="color"&gt;</li>
+            <li>Opens the operating system's native color picker.</li>
+
+            <li style="color:aquamarine">range &lt;input type="range"&gt;</li>
+            <li>Renders as a draggable slider for selecting values.</li>
+
+            <li style="color:aquamarine">number &lt;input type="number"&gt;</li>
+            <li>Restricts typing to digits and adds stepper arrows.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <h3>INPUT</h3>
+
+        <p>Email:</p>
+        <input type="email">
+
+        <p>Date:</p>
+        <input type="date">
+
+        <p>Color:</p>
+        <input type="color">
+
+        <p>Range:</p>
+        <input type="range">
+
+        <p>Number:</p>
+        <input type="number">
+    </div>
+
+    <div class="card">
+        <h3>HTML Source</h3>
+
+        <p>
+            &lt;input type="email"&gt;<br>
+            &lt;input type="date"&gt;<br>
+            &lt;input type="color"&gt;<br>
+            &lt;input type="range"&gt;<br>
+            &lt;input type="number"&gt;
+        </p>
+    </div>
+</div>
+
+<!--End of New Form Input Types-->
+
+
+<!--Start of The Drag and Drop API-->
+
+<h1 style="color: #05041f;">The Drag and Drop API</h1>
+<h4 style="color: #05041f;"><i>HTML5 allows natively dragging elements using simple attributes and standard JavaScript events.</i></h4>
+
+<div class="cards">
+    <div class="card">
+        <h3>Native Attribute</h3>
+
+        <h3>Making Elements Draggable</h3>
+
+        <p>By default, only images, links, and text selections are draggable. To make any other HTML element draggable, add the native attribute:</p>
+
+        <p>
+            draggable="true"
+        </p>
+
+        <ul>
+            <li>Applies to standard containers like &lt;div&gt;, &lt;p&gt;, and custom elements.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>JavaScript Events</h3>
+
+        <h3>Key Drag & Drop Events</h3>
+
+        <ul>
+            <li style="color:aquamarine">ondragstart:</li> Triggers immediately when the user clicks and begins dragging the element.
+
+            <li style="color:aquamarine">ondragover:</li> Specifies where dragged elements can be dropped. Must prevent default browser blocking to allow drops.
+
+            <li style="color:aquamarine">ondrop:</li> Executes custom drop logic when the draggable element is finally released.
+        </ul>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <h3>INPUT</h3>
+
+        <p>HTML Source:</p>
+
+        <p>
+            &lt;div draggable="true"&gt;<br>
+            Drag me<br>
+            &lt;/div&gt;
+        </p>
+
+        <p>
+            &lt;div ondragover="event.preventDefault()"&gt;<br>
+            Drop here<br>
+            &lt;/div&gt;
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>OUTPUT</h3>
+
+        <div draggable="true">
+            Drag me
+        </div>
+
+        <div ondragover="event.preventDefault()">
+            Drop here
+        </div>
+    </div>
+</div>
+
+<!--End of The Drag and Drop API-->
+      <hr>
+      <div class="card"><a href="Unit 2.html">Back</a></div>
+
+    </body>
+</html>
+</>

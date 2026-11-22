@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Color and Hyperlinks
+        </title>
+         <style>
+            .card{
+                background:#01391A;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #01391A;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #01391A;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+        <h1>Forms and Validation</h1>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <p>Form validation checks user input before an application accepts or sends it. HTML
+                    provides basic constraints such as required , type="email" , and
+                    minlength ; JavaScript can add application-specific checks and feedback. The
+                    purpose is not simply to block mistakes; it is to guide the user, reduce errors, and
+                    save server resources by stopping bad data before it is submitted.</p>
+            </div>
+            <div class="card">
+                <p>Typical validation includes checking that a field is not empty, that a password is
+                    long enough, that the email format matches expected syntax, and that required
+                    values are selected. In browser-side validation, JavaScript can show custom error
+                    messages and highlight the wrong input, while HTML attributes provide quick
+                    built-in rules. The browser also supports validation APIs such as
+                    checkValidity() , validity , and setCustomValidity() , which let
+                    developers combine built-in rules with custom business logic. However, because a
+                    user can disable JavaScript or send data directly to a server, final checks must still
+                    happen on the server side as part of secure application design.</p>
+            </div>
+        </div>
+        <h3>HTML Validation Rules</h3>
+        <div class="cards">
+            <div class="card">
+                <p>Start with HTML attributes whenever possible. They describe the expected input
+                    directly in the markup, work with browser and assistive-technology features, and
+                    reduce the amount of JavaScript needed. The browser checks these constraints
+                    when a form is submitted unless validation is disabled with the novalidate
+                    attribute.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 102350.png" height="300">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Validation Flow</h3>
+                <p>1. Collect the values when the user submits the form.
+                    2. Check basic constraints, such as required fields and valid input types.
+                    3. Apply any extra rules specific to the application, then explain how to correct
+                    errors.
+                    4. Only continue with submission when the values pass; validate them again on
+                    the server.</p>
+            </div>
+            <div class="card">
+                <p>For custom checks, checkValidity() returns true when all constraints pass.
+                    reportValidity() asks the browser to display its validation feedback. The
+                    validity property gives details such as whether a value is missing or has the
+                    wrong format, and setCustomValidity(message) can add a custom error.
+                    Clear a custom error by calling setCustomValidity("") when the value
+                    becomes valid.</p>
+            </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <p>This example prevents the default page reload so the script can check the fields
+                        first. In a real application, the valid branch would send the form data to a server;
+                        this page's demo only displays a confirmation message. Keep labels connected to
+                        inputs and make error feedback clear, as the demo does with a message
+                        announced through aria-live .</p>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 103347.png" height="300" width="500">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 103534.png" height="300" width="500">
+                </div>
+            </div>
+    
+        <hr>
+<div class="card"><a href="Unit 4.html">Back</a></div>
+    </body>
+</html>
+</>

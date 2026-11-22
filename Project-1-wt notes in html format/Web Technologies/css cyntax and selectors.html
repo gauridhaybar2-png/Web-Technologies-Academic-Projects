@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Formatting and Fonts
+             </title>
+             <style>
+            .card{
+                background:#352018;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #FFC7C7;
+                 box-shadow: 0 0 25px rgb(34, 10, 10);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(34, 10, 10);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+       
+    </head>
+    <body bgcolor="#FFC7C7">
+        <h1>CSS Syntax and Selectors</h1>
+        <p>
+            A CSS rule has a selector followed by a declaration block. Each declaration pairs
+            a property with a value.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 135053.png" height="300" width="500">
+            </div>
+        </div>
+        <h1>Common Selectors</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 135335.png" height="300" width="500">
+                </div>
+                <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 135545.png" height="500" width="500"> 
+            </div>
+        </div>
+        <h1>CSS Values, Units, and Custom Properties</h1>
+        <div class="cards">
+            <div class="card">
+        <p>A property only has an effect when it receives a value valid for that property.
+            Values may be keywords such as auto , colors, numbers, lengths, percentages,
+            or functions. A length usually needs a unit: 16px is a fixed CSS-pixel length,
+            while relative units can adapt to text or the available space.</p>
+            </div>
+           <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 141056.png" height="300" width="500">
+                
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 141120.png" height="400" width="500"> 
+               </div>     
+        </div>
+        <div class="cards">
+            <div class="card">
+        <p>Custom properties, often called CSS variables, store reusable values. Names begin
+            with two hyphens and are read with var() . Defining shared colors or spacing
+            on :root makes them available throughout the document and easier to update
+            consistently.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 141919.png" height="300" width="500">
+            </div>
+       </div>
+        <h1>How the Cascade Chooses a Value</h1>
+        <div class="cards">
+         <div class="card">
+        <p>If several rules set the same property, the browser resolves the cascade by
+            importance and origin, selector specificity, and then source order. The later rule
+            wins only when the earlier comparisons are tied. Inline styles commonly outrank
+            normal stylesheet rules but are not an unconditional highest priority.</p> 
+        </div>
+        <div class="card">
+            <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 141919.png" height="300" width="500">
+        </div> 
+        </div> 
+        <h1>Inheritance and the Cascade</h1> 
+        <div class="cards">
+         <div class="card">
+        <p>Some properties, especially text-related properties such as color and font-
+        family , are inherited: a child can use the computed value of its parent when it
+         has no value of its own. Many layout and box properties, such as margin ,
+        padding , and border , do not inherit by default. Inheritance is separate from
+        specificity: the cascade first determines the value on an element, and inheritance
+        can supply a value to a child when needed.</p>
+        </div>
+         <div class="card">
+            <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 142837.png" height="300" width="500">
+        </div> 
+        </div> 
+        <hr>
+        <div class="card"><a href="Unit 3.html">Back</a></div>
+    <!--Main body ENDS here-->
+        </body>
+     </html>
+     </>   

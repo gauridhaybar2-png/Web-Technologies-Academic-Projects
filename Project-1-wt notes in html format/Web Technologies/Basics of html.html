@@ -1,0 +1,801 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Basics of HTML</title>
+        <style>
+            .card{
+                background: rgb(1, 1, 56);
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: rgb(241, 234, 234);
+                box-shadow: 0 0 15px rgb(22, 30, 66);
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px rgb(8, 15, 36);
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+ <!--Main body starts here-->
+    <body bgcolor="ACDDDE">
+         <h1><b>Basics of HTML</b></h1>    
+        <h4><i>An essential guide to understanding the strucrure of web</i></h4>
+        <hr>
+<!--Start of What is HTML-->
+        <h1>What is HTML?</h1>
+        <div class="cards">
+        <div class="card">
+<!--The standard-->
+            <h3>The Standard</h3>
+        <ul>
+            <li>HTML stands for <b>Hyper Text Markup Language</b>.</li>
+            <li>It is the standard markup language for creating Web Pages.</li>
+            
+        </ul>
+        </div>
+        <div class="card">
+<!--Structure and elements-->
+            <h3>Structure & Elements</h3>
+            <ul>
+                <li>Describes the <b>Visual Structure</b> of a web page</li>
+                <li>Consists of series of nested elements that define layout blocks</li>
+            </ul>
+        </div>
+        <div class="card">
+<!--Browser Rendering-->
+            <h3>Browser Rendering</h3>
+            <ul>
+                <li>Tells the browser exactly <b>how to display</b> the content.</li>
+                <li>Labels pieces of content such as headings, paragraphs and links.</li>
+            </ul>
+        </div>
+        </div>
+<!--END OF what is html-->
+       
+ <!--Start of Example of simple HTML document-->
+         <h1>Example of an simple HTML Document</h1>
+         <div class="cards">
+            <div class="card">
+<!--INPUT-->
+                <h3>INPUT</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\basic html document.png" height="300" width="500">
+            </div>
+            <div class="card">
+<!--OUTPUT-->
+                <h3>OUTPUT</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\basic html document output(1).png" height="300" width="500">
+            </div>
+         </div>
+<!--End of example of html document-->
+
+<!--START OF example explained-->
+         <h1>Example Explained</h1>
+         <div class="cards">
+         <div class="card">
+            <label> <b>< !DOCTYPE > </b></label> 
+            <p>Defines that this document is an HTML5 document.</p>
+         </div>
+         <div class="card">
+            <h3>< html ></h3>
+            <p>The root element of an HTML page.</p>
+         </div>
+         <div class="card">
+            <h3>< head ></h3>
+                <p>Contains meta information about the HTML pages.</p>
+         </div>
+         </div>
+         <div class="cards">
+            <div class="card">
+                <h3>
+                    < title >
+                </h3>
+                <p>Specifies a title for the HTML page(shown in the browser's title bar or in the page's tab).</p>
+            </div>
+            <div class="card">
+                <h3>< body ></h3>
+                    <p>Defines the document's body,and is a container for all the visible contents,such as headings,paragraphs,images,hyperlink,tables,lists,etc.</p>
+            </div>
+            <div class="card">
+                <h3>< h1 ></h3>
+                    <p>Defines a large heading.</p>
+            </div>
+         </div>
+         <div class="cards">
+            <div class="card">
+                <h3>< p ></h3>
+                    <p>Defines a paragraph</p>
+            </div>
+         </div>
+<!--END of example explained-->
+
+<!--Start of What is an HTML elemnt-->
+          <h1>What is an HTML Element?</h1>
+          <h4><i>The building blocks of web pages,defining structure from start to end tags.</i></h4>
+          <div class="cards">
+          <div class="card">
+            <h3>Definition & Anatomy</h3>
+            <p>An HTML element is defined by a start tag,some content,and an end tag:</p><br>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\p.png">
+            <h3>Empty Elements:</h3>
+            <p>Some elements like br , hr    have no content and no tag.</p>
+          </div><br><br>
+          <div class="card">
+            <h3>Element Examples</h3>
+            <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\Screenshot 2026-09-25 160039.png" width="500"><br><br>
+ <!--Table starts here-->
+            <table style="color: white;border: 1px solid white;">
+                <tr>
+                <th style="border: 1px solid white;">Start Tag</th>
+                <th style="border: 1px solid white;">Element Contetnt</th>
+                <th style="border: 1px solid white;">End Tag</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid white;">h1</td>
+                    <td style="border: 1px solid white;">Used for important headings</td>
+                    <td style="border: 1px solid white;">/h1</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid white;">p</td>
+                    <td style="border: 1px solid white;">Used to create paragraphs</td>
+                    <td style="border: 1px solid white;">/p</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid white;">br</td>
+                    <td style="border: 1px solid white;">none</td>
+                    <td style="border: 1px solid white;">none</td>
+                </tr>
+            </table>
+<!--Table ends here-->
+          </div>
+          </div>
+          <hr>
+<!--End of Html elements-->
+
+<!--Start of Nested HTML elements-->
+        <h1>Nested HTML Elements</h1>
+        <h4><i>HTML elements can be nested,meaning they can contain other elements.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Nesting Principles</h3>
+                <ul>
+                    <li>All HTML documents consist of nested HTML elements that build the document structure.</li>
+                    <li>Nesting means that HTML elements can contain other elements inside them.</li>
+                    <li>Always ensure tags are closed in the correct reverse order of their opening.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\basic html document.png" height="300" width="500">
+            </div>
+        </div>
+
+<!--End of Nested HTML elements-->
+
+<!--Start of Example Explained-->
+          <h1>Example Explained</h1>
+          <h4><i>Understanding how HTML elements construct the foundational structure of a web pages.</i></h4>
+          <div class="cards">
+            <div class="card">
+                <h3>The HTML Document Root</h3>
+                <ul>
+                    <li>
+                        The < html > element is the root elementand it defines the entire HTML document.</li>
+                        <li>It strictly consists of a start tag < html > and an end tag < /html ></li>
+                        <li>Inside the root container, the < body > element encloses all visible page contents.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Visualizing Nesting</h3>
+                <pre>
+                < html >
+                    < body >
+                        < h1 >First Heading< /h1 >
+                        < p >First Paragraph< /p >
+                    < /body >
+                < /html >
+                </pre>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+                <h3>The < body > element</h3>
+                <p>Defines the document's body.It encloses all visible page content,containing other elements like headings and paragraphs.</p>
+            </div>
+            <div class="card">
+                <h3>The < h1 > Element</h3>
+                <p>Defines a prominent heading.Always pair the start tag and end tag to establish proper semantic hierarchy.</p>
+            </div>
+            <div class="card">
+                <h3>The < p > Element</p></h3>
+                <p>Defines a standard paragraphs of body text.It automatically ontroduces vertical nargins before and after the block.</p>
+            </div>
+          </div>
+<!--End of Exaple Explained-->
+
+<!-- Start of Never Skip the end tag-->
+            <h1>Never Skip the End tag</h1>
+            <h4><i>Relying on automatic tag closure can lead to unpredictable layout rendering and validatio errors.</i></h4>
+            <div class="cards">
+                <div class="card">
+                    <h3>Browser Tolerance VS  Standards</h3>
+                    <ul>
+                        <li>Some HTML elements may still display correctly in the browser even if you accidently omit the closing tag.</li>
+                        <li>This happens because browser engines attempt to perform automatic error correction on malformed markup.</li>
+                        <li>Never rely on this behaviour! Unexpected rendering bugs,style leakage and accessibility issues will occur if you forget the end tag.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Flawed Code Example</h3>
+                <pre>
+                    < html >
+                        < body >
+                        < p >This is a paragraph   < !--Missing end tag-- >
+                        < p > This is a paragraph  < !--Missing end tag-- >
+                        < /body >
+                    < /html >
+                </pre>
+            </div>
+<!--End of never skip the end tag-->
+
+<!--start of Empty HTML content-->
+            <h1>Empty HTML Elements</h1>
+            <h4><i>Understanding HTML tags that contain no content and do not require closing tags.</i></h4>
+            <div class="cards">
+                <div class="card">
+                    <h3>What are Empty Elements</h3>
+                    <ul>
+                        <li>HTML elements with no content are called empty elements.</li>
+                        <li>The < br> tag defines a line break , and is a classic example of an empty element.</li>
+                        <li>Empty elements do not have a closing tag.</li>
+                    </ul>
+                </div>
+            </div>
+<!--End of empty html content-->
+
+<!--Web Browser-->
+          <h1>Web Browsers</h1>
+          <div class="cards">
+            <div class="card">
+                <h3>Core Concept</h3>
+                <p>To read HTML documents and render them correctly across all modern browsers,including chrome,edge,firefox,and safari</p><hr>
+                <h3>Rendering Mechanism</h3>
+                <p>
+                    A browser does not display the raw HTML tags themselves,but instead interprets them as instruction to layout and display the pages content.
+                </p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\basic html document output(1).png" height="300" width="500">
+            </div>
+          </div>
+          <hr>
+<!--End of web browsers-->
+          
+<!--HTML page structure-->
+           <h1>HTML Page Structure</h1>
+           <h6>A visual representation of how elements nest within an HTML document.</h6>
+           <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\structure.png" height="300" width="500">
+            </div>
+            <div class="card">
+                <h3>Document Anatomy</h3>
+                <h4>< head > & < title ></h4>
+                <p>The header area contains page metadat. The title element specifies the text shown in the browser's title bar or tab.</p>
+                <h4>< body ></h4>
+                <p>The visible portion of the document . All content written here-headings,images and links -renders directly in the main browser window.</p>
+            </div>
+           </div><hr>
+
+<!--End of HTML Page structure-->
+<!--history of html-->
+<h1>HTML History</h1>
+<dl>
+    <h2>Foundations</h2>
+    <dt>1989</dt>
+    <dd>Tim Berners-Lee invented WWW</dd><br>
+    <dt>1991</dt>
+    <dd>Tim Berners-Lee invented HTML</dd><br>
+    <dt>1993</dt>
+    <dd>Dave Raggett drafted HTML+</dd><br>
+    <dt>1995</dt>
+    <dd>HTML Working Group defined HTML 2.0</dd><br>
+    <h2>Standardization</h2>
+    <dt>1997</dt>
+    <dd>W3C Recommendation:HTML 3.2</dd><br>
+    <dt>1999</dt>
+    <dd>W3C Recommendation :HTML4.01</dd><br>
+    <dt>2000</dt>
+    <dd>W3C Recommendation:XHTML 1.0</dd><br>
+    <h2>Modern Html5</h2>
+    <dt>2008-2012</dt>
+    <dd>WHATWG HTML5 Drafts & Living standard</dd><br>
+    <dt>2014</dt>
+    <dd>W3C Recommendatiom:HTML5</dd><br>
+    <dt>2016</dt>
+    <dd>W3C Candidate Rec:HTML5.1</dd><br>
+    <dt>2017</dt>
+    <dd>HTML5.1 2nd Edition & HTML5.2 Releases</dd><br>
+</dl>
+<!--HTML History ends here-->
+
+<!--Start of HTML Documents -->
+          <h1>HTML Documents</h1>
+          <h4><i>The fundamental rules and visual structure of every web page</i></h4>
+          <div class="cards">
+            <div class="card">
+                <h3>Structure Rules</h3>
+                <ul>
+                    <li>All HTML documents must start with a document type declaration:<br>< !DOCTYPE ></li>
+                    <li>The HTML document itself begins with< html > and ends with<br> < /html ></li>
+                    <li>The visible part of the document is nested between < body > and < /body ></li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\basic html document.png" height="300" width="500">
+            </div>
+          </div>
+<!--End of HTML Documents-->
+
+<!--Start of doctype declaration-->
+        <h1>The < !DOCTYPE > Declaration</h1>
+        <h4><i>Informs the web browser about the document type to ensure correct and consistent page rendering.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Declaration Rules</h3>
+                <ul>
+                    <li>Represents the document type and helps web browser to dispaly pages correctly.</li>
+                    <li>Must appear <b>only once</b> , at the very top of the page(before any HTML tags).</li>
+                    <li>The declaration is <b> not case sensitive</b></li>
+                    <li>The modern standard for HTML5 is < !DOCTYPE html ></li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\basic html document.png" height="300" width="500">
+            </div>
+        </div>
+<!--End of doctype declaration-->
+<!--Start of HTML Headings-->
+        <h1>HTML Headings</h1>
+        <h4><i>Defining semantic and visual hierarchy to structure web page content.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Heading Rules</h3>
+                <ul>
+                    <li>HTML headings are defined with the < h1 > to < h6 > tags.</li>
+                    <li>< h1 > defines the most important heading(highest visual weight).</li>
+                    <li>< h6 > defines the least important heading(lowest visual weight).</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>INPUT</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\heading hierarachy.png" height="300" width="350">
+            </div>
+            <div class="card">
+                <h3>OUTPUT</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\heading hierarchy output.png" height="300" width="350">
+            </div>
+        </div>
+<!--End of HTML Headings-->
+<!--Start of HTML Paragraphs-->
+         <h1>HTML Paragraphs</h1>
+         <h4><i>Defining block level text elements to structure written content on a web page</i></h4>
+         <div class="cards">
+            <div class="card">
+                <h3>Paragraph Rules</h3>
+                <ul>
+                    <li>HTML Paragraphs are defined with the < p >tag.</p></li>
+                    <li>They are <b>block level elements</b>,meaning they always start on a new line.</li>
+                    <li>Browsers automatically add some <b>white space</b>(margin) before and after a paragraph.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\p.png">
+            </div>
+         </div>
+<!--End of HTML Paragraphs-->
+
+<!--HTML Links-->
+        <h1>HTML Links</h1>
+        <h4><i>Defining hyperlinks to connect web pages and navigate to external resources.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>
+                    Link Rules
+                </h3>
+                <ul>
+                    <li>HTML links are defined with the < a > tag.</li>
+                    <li>The links destination is specified in the href attribute.</li>
+                    <li>Attributes are used to provide additional information about HTML elements.</li>
+                </ul>
+            </div>
+            
+                 <div class="card">
+                        <h3>INPUT</h3>
+                        <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\link.png" height="300" width="350">
+                    </div>
+            
+             <div class="card">
+                        <h3>OUTPUT</h3>
+                        <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\link result.png" height="300" width="350">
+                    </div>
+        </div>
+<!--END of HTML Links-->
+
+<!--Start of HTML images-->
+        <h1>HTML Images</h1>
+        <h4><i>Embedding visual media,defining alternative descriptions and setting dimensions.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Image Rules</h3>
+                <ul>
+                    <li>HTML images are defined with the < img >tag.</li>
+                    <li>Attributes like src(source),alt(alternative text),width and height configure the image properties.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>INPUT</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\img input.png" height="300" width="350">
+            </div>
+             <div class="card">
+                <h3>INPUT</h3>
+                <img src="C:\Users\Gauri\Desktop\B.tech Sem 1\Web Technologies\images\img output.png" height="300" width="350">
+            </div>
+        </div>
+<!--End of HTML links-->
+<!--Start of how to view html source-->
+        <h1>How to view HTML Source</h1>
+        <h4><i>Explore , analyze and experiment with the underlying code of any web page in real time.</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>View Page Source</h3>
+                <p>Perfect for viewing the entire,original raw HTML document in a static,read only view.</p>
+                <ul>
+                    <li>Press <b>CTRL+U</b>(Windows) or <b>Cmd+Option+U</b>(Mac)</li>
+                    <li>Alternatively,right click anywhere on the page and select "View Page Source".</li>
+                    <li>This action opens a brand new browser tab containing the complete source code.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Inspect HTML Elements</h3>
+                <p>Best for examining , styling and debugging individual elements interactively.</p>
+                <ul>
+                    <li>Right click directly on any specific element and choose "Inspect"</li>
+                    <li>The DevTools panel will open,highlighting both the live HTML structure and associated CSS styles.</li>
+                    <li>You can temporarily edit text,swap classes or change the colore on the fly to test layouts.</li>
+                </ul>
+
+            </div>
+        </div>
+<!--End of how to view html source-->
+
+<!--Start of HTML is not a case sensitive-->
+            <h1>HTML is <b>Not A Case Sensitive</b></h1>
+            <h4><i>Understanding tag standards,recommendations and instituitional rules.</i></h4>
+            <div class="cards">
+                <div class="card">
+                    <h3>W3C standards and Behavior</h3>
+                    <ul>
+                        <li>HTML tags are not case sensitive:< P > means the same as < p ></li>
+                        <li>The official standard does not strictly require lowcase tags.</li>
+                        <li>W3C strongly <b>recommends</b> lowercase in standard HTML.</li>
+                        <li>W3C <b>demands</b> lowercase for stricter document types like XHTML.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>SOCSET Policy</h3>
+                    <p>At School of Computer Science & Technology (SOCSET) , we always enforce clean code standards.
+                        <h4>Preferred Practice</h4>
+                        <pre>
+                            < body >
+                                < p >Correct Lowercase< /p >
+                            < /body >
+                        </pre>
+                        <h4>Discouraged Practice</h4>
+                        <pre>
+                            < BODY >
+                                < P >Avoid Uppercase< /P >
+                            < /BODY >
+                        </pre>
+                    </p>
+                </div>
+            </div>
+<!--End of HTML is not a case sensitive-->
+<!--START OF HTML Tag Referencw-->
+        <h1>HTML Tag Reference</h1>
+        <h4><i>W3School's tag reference contains additional information about these tags and their attribute.</i></h4>
+        <div class="card">
+            <pre>
+            < html >   Defines the root of an HTML document 
+            </pre> 
+        </div><br>
+        <div class="card">
+            <pre>
+            < body >   Defines the document's body 
+            </pre> 
+        </div><br>
+        <div class="card">
+            <pre>
+            < h1 > to < h6 >  Defines HTML headings 
+            </pre> 
+        </div><br>
+        <div class="card">
+            <pre>
+            For a complete list of all available HTML tags ,<a href="https://www.w3schools.com/tags/default.asp">Click here</a>
+            </pre> 
+        </div>
+<!--end of HTML Tag refernces-->
+<!--Start of HTML Attributes-->
+          <h1>HTML Attributes</h1>
+          <h4><i>Key concepts,specifications and standard syntax rules for element properties</i></h4>
+          <div class="cards">
+            <div class="card">
+                <h3>Core Behavior</h3>
+                <ul>
+                    <li>All HTML elements can have attributes,which modify default element behavior or styling.</li>
+                    <li>Attributes provide vital additional information about elements , such as source paths or link destinations.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Syntax Rules</h3>
+                <ul>
+                    <li> Attributes are always specified in the start tag , never in the end tag.</li>
+                    <li>Attributes usually come in name/value pairs like:name="value".</li>
+                </ul>
+            </div>
+          </div>
+<!--End of HTML attributes-->
+
+<!--Start of The href attribute-->
+         <h1>The href attribute</h1>
+         <h4><i>Defining hyperlinks and directing navigation paths in HTML documents.</i></h4>
+         <div class="cards">
+            <div class="card">
+                <h3>Core Purpose</h3>
+                <ul>
+                    <li>The < a > tag(anchor tag) defines a hyperlink, allowing users to navigate from one page to another.</li>
+                    <li>The href attribute is critical-it specifies the destination URL or pathof the linked pages.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Syntax & Example</h3>
+                <p>A standard anchor element pointing to an external website destination:<br>
+                < a href ="https://www.itmbu.ac.in" >Click here< /a >
+                </p>
+                
+            </div>
+         </div>
+<!--end of href attribute-->
+<!--start of The src attribute-->
+        <h1>The src attribute</h1>
+        <h4><i>Embedding images and managing paths in HTML documents</i></h4>
+        <div class="cards">
+            <div class="card">
+                <h3>Core Behavior</h3>
+                <p>The < img > tag embeds an image in a page . The src attribute defines the image path.<br>Syntax Example:<br>< img src="img.png" ></p>
+            </div>
+            <div class="card">
+                <h3>URL Specifications</h3>
+                <ol>
+                    <li>Absolute URL:Links to external sites.<br>Example:src="[link removed]"<br>Subject to copyright and external deletion.</li>
+                    <li>Relative URL:Hosted within the website.<br>Example:src="img.jpg"<br>Recommended .Won't break if domain changes.</li>
+                </ol>
+            </div>
+        </div>
+<!--End of src attribute-->
+
+<!--Start of width and height attribute-->
+         <h1>The width and height Attributes</h1>
+         <h4><i>Specifying exact dimensions and reserving layout space for images.</i></h4>
+         <div class="cards">
+            <div class="card">
+                <h3>Core Purpose</h3>
+                <ul>
+                    <li>The width and height attribute specify the dimensions of the image in pixels.</li>
+                    <li>Defining these attributes prevents page layout flicker and shift while the image is loading.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Syntax &Example</h3>
+                <p>A standard image element with defined pixel width and height: <br>
+                < img src="img.png" height="600" width="500" >
+                </p>
+            </div>
+         </div>
+<!--end of width and height attribute-->
+<!--start of the alt attribute-->
+             <h1>The alt attribute</h1>
+             <h4><i>Providing alternate descriptions for accessibility and fallback display.</i></h4>
+             <div class="cards">
+                <div class="card">
+                    <h3>Core Purpose</h3>
+                    <ul>
+                        <li>Fallback Text: Specifies an alternate description if the image cannot be loaded or displayed.</li>
+                        <li>Accessibility:Crucial for screen readers used by visually impaired users to understand page content.</li>
+                        <li>Resilience:Displays when users have slow connections or if the image source path is broken.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Syntax & Example</h3>
+                    <p>The alt text should be descriptive and concise matching the visual content of the image:<br>< img src="img.jpg"alt="jacket photo" ></p>
+                </div>
+             </div>
+             
+<!--end of the alt attribute-->
+
+<!--start of style Attribute-->
+          <h1>The style Attribute</h1>
+          <h4><i>Applying inline styles to customize the visual apperance of HTML elements</i></h4>
+          <div class="cards">
+            <div class="card">
+                <h3>Core Purpose</h3>
+                <ul>
+                    <li>Inline Styling:Used to define style rules directly within a single element's tag.</li>
+                    <li>Presentation:Quickly customize visual properties such as colors, fonts,margins,sizes and layout options.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Syntax & Example</h3>
+                <p>Apply styles using the format property:value within the style attribute:<br>< p style="color:red;" >This is a red paragraph</p>
+            </div>
+          </div>
+<!--end of style attribute-->
+
+<!--Start of The Lang attribute-->
+
+                <h1>The lang attribute</h1>
+               <h4><i>Declaring page language and regional country codes for browsers and search engines.</i></h4>
+               <div class="cards">
+               <div class="card">
+                <h3>
+                    Core Purpose
+                </h3>
+                <ul>
+                    <li>Language Declaration:Include the lang attribute in the < html > tag to declare the langauge of the web pages to assist search engines abd browsers.</li>
+                    <li>Country Codes:Extend languages codes with the regional variations(e.g first two characters for language,last two for country).</li>
+                </ul>
+               </div>
+               <div class="card">
+                <h3>Syntax & Example</h3>
+                <p>Specifying English as the language:<br>< html lang="en" ><br>Specifying English(US) as aregional variant:<br>< html lang="en-US" ></html></p>
+               </div>
+               </div>
+           
+<!--start of the title attribute-->
+           <h1>The title attribute</h1>
+           <h4><i>Defining auxiliary information about an HTML element that appears as a hover tooltip</i><h4>
+            <div class="cards">
+                <div class="card">
+                    <h3>Core Purpose</h3>
+                    <ul>
+                        <li>Tooltip Display:The value of the title attribute is typically displayed as a tooltip popup when the user hovers their mouse pointer over the element.</li>
+                        <li>Extra Info:Used to provide advisory or extra helper information that doesnt need to be constantly visible on the page.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Syntax & Example</h3>
+                    < p >Adding a tooltip to a paragraph element:<br>< p title="I'm a tooltip" > This is a paragraph< /p >
+                </div>
+            </div>
+<!--end of an title attribute-->
+
+<!--start of quote attribute values-->
+       <h1>Always Quote Attribute Values</h1>
+       <h4><i>W3C recommendations and practical syntax requirements for quoting HTML doccument</i></h4>
+       <div class="cards">
+        <div class="card">
+            <h3>W3C Recommendations</h3>
+            <ul>
+                <li>Standard:The HTML standard does not strictly require quotes around attribute values.</li>
+                <li>Best Practice:W3C strongly recommends quotes in HTML and demands them a stricter XHTML.</li>
+                <pre>
+                GOOD SYNTAX:
+                < a href="https://www.itmbu.ac.in" >
+                BAD SYNTAX(Avoid):
+                < a href=https://www.itmbu.ac.in >
+                </pre>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>The space Exception</h3>
+            <ul>
+                <li>Space Limitation:Quotes are absolutely necessary when the attribute value contains space.Otherwise,it will not dispaly correctly.</li>
+                <li>SOCSET Standard:At SOCSET ,we always use quotes around attribute values to ensure clean and robust rendering.</li>
+            </ul>
+        </div>
+       </div>
+<!--end of quote attribute values
+<!--start of single or duble quote-->
+         <h1>Single or Double Quotes</h1>
+         <h4><i>Rules and standard for handiling nested quote marks inside HTML attributes</i></h4>
+         <div class="cards">
+            <div class="card">
+                <h3>Standard Usage</h3>
+                <ul>
+                    <li>Common Practice:
+                        Double quotes around attribute values are the most common in HTML,but single quotes can also be used.<br>Standard Double Example:<br>< p title="John Nelson" ><br>Standard Single Quote Example:<br>< p title='John Neslon'>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Handling Nested Quotes</h3>
+                <ul>
+                    <li>The Conflict:When the attribute value itself conatins quotes,you must alternate quote styles to avoid breaking syntax.</li>
+                    <br>Exaple:<br>< p title="John 'Nelson'" >
+                    <br>And vice-versa
+                </ul>
+            </div>
+         </div>
+<!--end of single or duble quote-->
+
+<!--START OF Headings are important -->
+       <h1>Headings are important</h1>
+       <h4><i>Why and how to structure your web documents using HTML headings tags.</i></h4>
+       <div class="cards">
+        <div class="card">
+            <h3>Best Practices</h3>
+            <ul>
+                <li>SEO & Indexing:Search engines use headings to index the structure and content of your web pages.</li>
+                <li>Readability:Users skim pages by heading. It is vital to use them to outline clear document.</li>
+                <li>Hierarchy:Use < h1 > for main titles,follwed by < h2 > for sections and < h3 > for sub sections.</li>
+            </ul>
+        </div>
+       </div>
+<!--end of headings are important-->
+<!--start of HTML Tag refernce-->
+            <h1>HTML Tag Reference</h1>
+            <h4><i>A quick reference guide to standard document layout and structure elements.</i></h4>
+            <div class="cards">
+                <div class="card">
+                    <pre>
+                    <h1>< p ></h1>
+                    <h2>Paragraph</h2>
+                    <h2>Defines a paragraph in the document</h2>
+                    </pre>
+                </div>
+                <div class="card">
+                    <pre>
+                    <h1>< hr ></h1>
+                    <h2>Horizontal Rule</h2>
+                    <h2>Defines a thematic change in the content.</h2>
+                    </pre>
+                </div>
+            </div>
+             <div class="cards">
+                <div class="card">
+                    <pre>
+                    <h1>< br ></h1>
+                    <h2>Line Break</h2>
+                    <h2>Inserts a single line break in the layout</h2>
+                    </pre>
+                </div>
+                <div class="card">
+                    <pre>
+                    <h1>< pre ></h1>
+                    <h2>Preformatted</h2>
+                    <h2>Defines pre-formatted text elements.</h2>
+                    </pre>
+                </div>
+            </div>
+<!--end of hrml tag reference-->
+<hr>
+        <div class="card"><a href="Unit 2.html">Back</a></div>
+</body>
+</html>
+</>
+

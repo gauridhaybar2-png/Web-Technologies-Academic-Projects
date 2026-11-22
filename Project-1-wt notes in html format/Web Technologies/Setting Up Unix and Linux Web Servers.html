@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            XHTML:Meta Tags
+        </title>
+        <style>
+            .card{
+                background:#1d1836;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                 box-shadow: 0 0 25px #1a1242;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #1a1242;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D5BEEB">
+        <h1>Setting Up Unix and Linux Web Servers</h1>
+        <div class="cards">
+            <div class="card">
+                <p>A Unix-like web server needs a machine, a web-server program, a document root or application, network
+                    access, and safe configuration. The steps below show a small Apache virtual host on Debian or Ubuntu
+                    Linux. Commands and service names vary on other Unix-like systems; Fedora/RHEL and Nginx notes follow.</p>
+            </div>
+        </div>
+        <h3>Apache on Debian or Ubuntu</h3>
+        <div class="cards">
+            <div class="card">
+                <p>Install Apache, create a document root, and create a tiny page. Commands using sudo change system
+                    configuration; review each path before running them.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 200326.png" height="300" width="500">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <p>Create /etc/apache2/sites-available/unit1-demo.conf with this virtual-host configuration:</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 200518.png" height="300" width="500">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <p>Enable and test the site. The reserved .test name is for testing; send the host header explicitly so
+                Apache selects this virtual host.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-13 200635.png" height="300" width="500">
+            </div>
+        </div>
+        <h3>Firewall and public hosting</h3>
+        <div class="cards">
+            <div class="card">
+                <p>For a local-only lab, test on the server itself first. If you deliberately host a public site, configure the machine
+                and network firewall for the required ports, use a real domain, configure HTTPS, update software, restrict
+                file permissions, and monitor logs. Opening a port or forwarding traffic through a home router exposes the
+                service to the Internet; do not expose an unpatched development server or private files.
+                On Ubuntu with UFW, a basic HTTP firewall rule is sudo ufw allow 80/tcp . Only allow HTTPS after TLS
+                is configured. If deploying a public domain, use a trusted certificate authority and keep certificate renewal
+                working.</p>
+            </div>
+        </div>
+        <h3>Other Unix/Linux options</h3>
+        <div class="cards">
+            <div class="card">
+                <p>
+                    Fedora/RHEL with Apache: install httpd with sudo dnf install httpd , start it with sudo
+                    systemctl enable --now httpd , and use the distribution's firewall and SELinux guidance. The
+
+                    service and configuration paths can differ from Debian.
+                    <br><br>Nginx on Ubuntu: install with sudo apt install nginx ; server blocks are commonly stored in
+                    /etc/nginx/sites-available/ and linked into sites-enabled/ . Run sudo nginx -t before
+                    reloading with sudo systemctl reload nginx .
+                    <br><br>macOS / BSD / other Unix: package managers, service control, firewall tooling, and default paths
+                    differ. Follow the system's current Apache or Nginx documentation instead of assuming Ubuntu
+                    commands apply unchanged.
+                </p>
+            </div>
+        </div>
+      <hr>
+       <div class="card"> <a href="Unit 1.html">Back</a></div>
+    </body>
+</html>
+</>   

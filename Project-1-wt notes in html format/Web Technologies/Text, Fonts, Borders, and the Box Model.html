@@ -1,0 +1,109 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            List,Tables,Images,Forms
+        </title>
+        <style>
+            .card{
+                background: #5f051c;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #D3E1C4;
+                box-shadow: 0 0 15px #5f051c;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #5f051c;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3E1C4">
+        <h1>Text, Fonts, Borders, and the Box Model</h1>
+        <h3>Typography and Text</h3>
+        <div class="cards">
+            <div class="card">
+                <p>Font properties set the typeface, size, and weight. Text properties handle
+                    alignment and decoration. Relative sizes such as rem scale with the root font
+                    size; unitless line-height scales naturally with text.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 152617.png" height="400" width="500">
+            </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 152803.png" height="300" width="500">
+                </div>
+            </div>
+            <h3>Borders</h3>
+            <div class="cards">
+                <div class="card">
+                    <p>A border needs a style such as solid or dashed to be visible. The shorthand
+                    border: 3px solid #174f78; sets width, style, and color together. One to
+                    four values can specify top, right, bottom, and left in that order.</p>
+                </div> 
+                <div class="card">
+                  <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 154706.png" height="300" width="500">  
+                </div>
+                </div>  
+                <h3>Box Model</h3>  
+                <div class="cards">
+                    <div class="card">
+                        <p>From the inside outward, an element consists of content, padding, border, and
+                            margin. Padding is inside the border; margin separates the outside of one
+                            element from its neighbors.
+                            With the default content-box sizing, a declared width applies only to the
+                            content; padding and border increase the rendered size. With border-box , the
+                            declared width includes content, padding, and border, which makes page layouts
+                            easier to calculate. Margins remain outside either box. In normal block flow,
+                            vertical margins of adjacent blocks can collapse into one margin rather than add
+                            together.</p>
+                    </div>
+                    <div class="card">
+                        <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 154948.png" height="300" width="500">
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Default: content-box</h4>
+                        <p>For a 300px width, 20px
+                            horizontal padding, and 5px
+                            borders, the rendered width is
+                            300px + 40px + 10px = 350px.
+                            Margins add outside</p>
+                    </div>
+                    <div class="card">
+                        <h4>Predictable sizing: border-box</h4>
+                        <p>box-sizing: border-box
+                            includes padding and borders in
+                            the declared width. It is commonly
+                            applied globally.</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-11 155300.png" height="300" width="500">
+                    </div>
+                </div>
+                 <hr>
+       <div class="card"> <a href="Unit 3.html">Back</a></div>
+        </body>
+        </html>
+        </>

@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            HTML5 Multimedia,etc.
+        </title>
+        <style>
+            .card{
+                background: #610020;
+                border: 1px solid;
+                border-radius: 15px;
+                padding: 20px;
+                width: 500px;
+                color: #f0d393;
+                box-shadow: 0 0 15px #3c0014;
+                animation: glow 2s infinite alternate
+            }
+            .card:hover {
+                box-shadow: 0 0 25px #3c0014;
+                transform: scale(1.05);
+                transition: 0.3s;
+
+            }
+             .cards{
+                background:ACDDDE;
+            
+                border-radius: 15px;
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                padding: 15px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body bgcolor="#fff8b6">
+        <h1>Events and Buttons</h1>
+            <div class="cards">
+                <div class="card">
+                    <p>An event is something that happens in the browser, such as a click, key press,
+                        form submission, or page load. An event listener connects an event to a function.
+                        Prefer addEventListener() so behavior remains separate from HTML structure and several listeners can be attached without mixing logic into inline
+                        markup. This separation is a key principle of maintainable front-end code.</p>
+                </div>
+                <div class="card">
+                    <p>When a user interacts with the page, the browser creates an event object that
+                        contains useful information such as which element was clicked and what type of
+                        event occurred. Developers can inspect that object to decide how to respond.
+                        This is the foundation for features such as form validation, drag-and-drop
+                        interfaces, button-based actions, keyboard shortcuts, and interactive charts.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                   <h3>click</h3>
+                   <p>Button activation, including
+                    keyboard activation for native
+                    buttons.</p>
+                </div>
+                <div class="card">
+                    <h3>input</h3>
+                    <p>Fires as a user edits an input
+                        value and is useful for real-time
+                        validation.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>submit</h3>
+                    <p>Fires when a form is submitted;
+                        useful for validation and handling.</p>
+                </div>
+                <div class="card">
+                    <h3>Event object</h3>
+                    <p>Provides details about the event
+                    and the element that received it,
+                    enabling targeted behavior.</p>
+                                    </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 110459.png" height="300" width="500">
+                </div>
+                <div class="card">
+                    <img src="C:\Users\Gauri\Pictures\Screenshots\Screenshot 2026-11-12 110559.png" height="300" width="500">
+                </div>
+            </div>
+          <hr>
+      <div class="card"><a href="Unit 4.html">Back</a></div>
+
+    </body>
+</html>
+</>
